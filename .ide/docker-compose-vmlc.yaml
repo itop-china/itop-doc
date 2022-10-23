@@ -1,0 +1,19 @@
+version : '3'
+services:
+  itop-dev:
+    image: registry.cn-hangzhou.aliyuncs.com/smartide/smartide-golang-v2-vscode-vmlc:latest
+    restart: always
+    runtime: sysbox-runc
+    hostname: itop-dev
+    ports:
+      - 6822:22
+      - 6800:3000
+      - 1313:1313
+    volumes:
+      - .:/home/project
+    networks:
+      - itop-dev-network
+  
+networks:
+  itop-dev-network:
+    external: true
