@@ -39,7 +39,7 @@ iTop依赖 Apache/IIS, MySQL 和 PHP，所以能够运行在支持这些应用�
 
 
 ---
-原文：<https://www.itophub.io/wiki/page?id=start>
+原文：<https://www.itophub.io/wiki/page?id=start">
 
 版本：3_0_0/about.txt · Last modified: 2022/08/05 12:07 (external edit)
 
