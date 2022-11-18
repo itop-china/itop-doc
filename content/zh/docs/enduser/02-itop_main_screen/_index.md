@@ -9,7 +9,7 @@ description: >
 
 下图显示了应用程序的主界面，它包含了iTop界面的所有标准元素:
 
-<img src="./images/mainscreen.png"/>
+<img src="./images/mainscreen.png"  width="75%" height="75%"/>
 
 ## **用户菜单**
 
