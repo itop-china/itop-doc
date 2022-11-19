@@ -164,7 +164,7 @@ _一般而言是工单，但它适用于所有至少有一个工单日志的对�
 
 可以用来关联一个头像到您的用户。
 
-如果你的联系人有照片，那么就会使用它。
+![提示](/docs/images/tip.png) <font style="color: #00CC33">如果你的联系人有照片，那么就会使用它。</font>
 
 >> →下一篇：[对象显示和修改](../04-display_and_modification_of_an_object/) 
 
