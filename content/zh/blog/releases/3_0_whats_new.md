@@ -8,328 +8,329 @@ description: >
 ---
 
 
-iTop 3.0 Community
+## iTop 3.0 社区版
 ==================
 
-*   Beta version 3.0.0 release date: _April 2021_
+*   3.0.0 Beta 版本发布日期：_2021年4月_
     
-*   3.0.0 release date: _January 2022_
+*   3.0.0 发布日期： _2022年 1月_
     
-*   3.0.1 release date: _April 2022_
+*   3.0.1 发布日期： _2022年 4月_
     
-*   3.0.2 release date: _September 2022_
+*   3.0.2 发布日期： _2022年 9月_
+    
+*   [下载链接](https://sourceforge.net/projects/itop/files/itop/3.0.0/ "https://sourceforge.net/projects/itop/files/itop/3.0.0/")
+    
+*   升级须知： [迁移说明](https://www.itophub.io/wiki/page?id=3_0_0:install:270_to_300_migration_notes "3_0_0:install:270_to_300_migration_notes")
+    
+*   iTop变更历史列表：[累积的变更日志](https://www.itophub.io/wiki/page?id=3_0_0:release:change_log "3_0_0:release:change_log")
+    
+*   [3.0.0 版本 已知问题 ](https://www.itophub.io/wiki/page?id=3_0_0:release:beta-known-issues "3_0_0:release:beta-known-issues") 列表
+    
+*   检查 [扩展 3.0 适配版本](https://www.itophub.io/wiki/page?id=3_0_0:release:extensions "3_0_0:release:extensions")
     
 
-*   [Download link](https://sourceforge.net/projects/itop/files/itop/3.0.0/ "https://sourceforge.net/projects/itop/files/itop/3.0.0/")
-    
-*   Read before upgrading: [Migration notes](https://www.itophub.io/wiki/page?id=3_0_0:install:270_to_300_migration_notes "3_0_0:install:270_to_300_migration_notes")
-    
-*   List of changes across iTop history: [Cumulative Change Log](https://www.itophub.io/wiki/page?id=3_0_0:release:change_log "3_0_0:release:change_log")
-    
-*   List of [Known Issues in 3.0.0](https://www.itophub.io/wiki/page?id=3_0_0:release:beta-known-issues "3_0_0:release:beta-known-issues") version
-    
-*   Check [Extensions 3.0 compatible version](https://www.itophub.io/wiki/page?id=3_0_0:release:extensions "3_0_0:release:extensions")
-    
-
-What's new in iTop Community
+## iTop 社区版新特性
 ============================
 
-<table class="inline"><tbody><tr class="row0"><td class="col0 centeralign">This version focused on improving the <strong>Look</strong> and the <strong>Usability</strong> of iTop</td></tr></tbody></table>
+<table class="inline"><tbody><tr class="row0"><td class="col0 centeralign">这个版本专注于改进iTop的 <strong>外观</strong> 和 <strong>可用性</strong>。</td></tr></tbody></table>
 
 [![Welcome page](https://www.itophub.io/wiki/media?w=600&tok=0bcd25&media=3_0_0:user:fullmoon-welcome.png "Welcome page")](https://www.itophub.io/wiki/media?media=3_0_0:user:fullmoon-welcome.png "3_0_0:user:fullmoon-welcome.png")
 
 * * *
 
-Homepage
+### 首页
 --------
 
 [![Homepage](https://www.itophub.io/wiki/media?w=600&tok=1e551a&media=3_0_0:user:welcome.png "Homepage")](https://www.itophub.io/wiki/media?media=3_0_0:user:welcome.png "3_0_0:user:welcome.png")
 
-Main thing that you cannot miss: **the layout, the colors, the icons, the menus,…** all this has totally changed, to make it more readable, leave more space to the important information, highlight the things that matter to you, so you can be more efficient.
+不能错过的主要内容：**布局、颜色、图标、菜单……** 所有这些都完全改变了，更可读，给重要信息留下更多空间，突出重要的东西，所以可以更高效。
 
-Main changes on the possible actions:
+可能的操作的主要变化:
 
-*   One click access to the [Welcome dashboard](about:blank#menus "3_0_0:release:3_0_whats_new ↵") from anywhere in iTop
+*   在iTop中任何位置一键访问 [欢迎面板](about:blank#menus "3_0_0:release:3_0_whats_new ↵") 
     
-*   A new [Quick Creation](about:blank#quick_create "3_0_0:release:3_0_whats_new ↵") action has been added, to avoid searching for the corresponding class creation menu.
+*   添加了一个新的 [快速创建](about:blank#quick_create "3_0_0:release:3_0_whats_new ↵") 操作，以避免搜索相应的类创建菜单。
     
-*   The [Quick search](about:blank#quick_search "3_0_0:release:3_0_whats_new ↵") has moved from right to left, on the upper part of the screen.
+*   [快速搜索](about:blank#quick_search "3_0_0:release:3_0_whats_new ↵") 从右侧移动到左侧，在界面的上方。
     
-*   The [Menus](about:blank#menus "3_0_0:release:3_0_whats_new ↵") can de reduced to their icons, thus freeing space for real data.
+*   [菜单](about:blank#menus "3_0_0:release:3_0_whats_new ↵") 可以简化成图标，从而为实际数据释放空间。
     
-*   The [User menu](https://www.itophub.io/wiki/page?id=3_0_0:user:main#user_menu "3_0_0:user:main") has moved at the opposite corner of the screen!
+*   [用户菜单](https://www.itophub.io/wiki/page?id=3_0_0:user:main#user_menu "3_0_0:user:main") 移动到屏幕另一侧的角落了!
     
 
 * * *
 
-Quick Search
+### 快速搜索
 ------------
 
 ![Quick search icon](https://www.itophub.io/wiki/media?w=350&tok=940c75&media=3_0_0:user:quick-search-tooltip.png "Quick search icon") [![Quick search result](https://www.itophub.io/wiki/media?w=500&tok=74500f&media=3_0_0:user:quick-search-result.png "Quick search result")](https://www.itophub.io/wiki/media?media=3_0_0:user:quick-search-result.png "3_0_0:user:quick-search-result.png")
 
-The Quick search is now on the left.
+快速搜索现在在左侧。
 
-*   The main new feature is that **it remembers your past searches**
-    
-*   As before, when you reopen the Quick search, your last search is still there, so if you made a typo, you can fix it without reentering the whole string.
+*   主要的新特性是 **它记录了过去的搜索记录**
+
+*   与以前一样，当重新打开快速搜索时，最后的搜索仍然在那里，因此如果犯了一个拼写错误，可以修复它，而无需重新输入整个字符串。
     
 
-This feature can now be configured through new configuration parameters [global\_search.xxx](https://www.itophub.io/wiki/page?id=3_0_0:admin:itop_configuration_file#f-l "3_0_0:admin:itop_configuration_file"), which allow to:
+现在可以通过新的配置参数配置该特性 [global\_search.xxx](https://www.itophub.io/wiki/page?id=3_0_0:admin:itop_configuration_file#f-l "3_0_0:admin:itop_configuration_file")，这允许：
 
-*   disable completely the feature
+*   完全禁用这个功能
     
-*   remove the tracking and display of the past searches
+*   删除过去搜索的踪迹和显示
     
-*   fine-tuned the number of past searches which are kept (default 10)
+*   优化过去搜索操作保留的数量（默认为10）
     
 
 * * *
 
-Quick Create
+### 快速创建
 ------------
 
 [![Quick create button](https://www.itophub.io/wiki/media?w=300&tok=7baa36&media=3_0_0:user:quick-creation-tooltip.png "Quick create button")](https://www.itophub.io/wiki/media?media=3_0_0:user:quick-creation-tooltip.png "3_0_0:user:quick-creation-tooltip.png") [![Quick creation dropdown](https://www.itophub.io/wiki/media?w=300&tok=7b3ee3&media=3_0_0:user:quick-creation-dropdown.png "Quick creation dropdown")](https://www.itophub.io/wiki/media?media=3_0_0:user:quick-creation-dropdown.png "3_0_0:user:quick-creation-dropdown.png")
 
-Brand new feature:
+全新功能：
 
-It allows you to quickly create any object without knowing where is the menu to do it, if even there is one.  
-Just type the beginning of the class you want, and you are proposed with the matching classes.
+它允许快速创建任何对象，甚至不知道菜单在哪里，如果有的话。
 
-*   If there is just one matching class, just press enter and the creation form for that class is displayed.
-    
-*   You can use the arrow-keys from your keyboard to navigate in the proposed list
+只需键入所需类的开头，系统就会推荐与之匹配的类。
+
+*   如果只有一个匹配的类，只需按回车键，就会显示该类的创建表单。
+
+*   可以使用键盘上的方向键来浏览建议列表
     
 
-This feature can be configured through configuration parameters [quick\_create. .xxx](https://www.itophub.io/wiki/page?id=latest:admin:itop_configuration_file#o-r "latest:admin:itop_configuration_file"), which allow to:
+现在可以通过配置参数配置该特性 [quick\_create. .xxx](https://www.itophub.io/wiki/page?id=latest:admin:itop_configuration_file#o-r "latest:admin:itop_configuration_file")，这允许：
 
-*   disable completely the feature
+*   完全禁用这个功能
     
-*   remove the tracking and display of the past creations
+*   删除过去创建的踪迹和显示
     
-*   fine-tuned the number of past creations which are kept (default 10)
+*   优化过去创建操作保留的数量（默认为10）
     
-*   fine-tuned the number of results displayed by the autocomplete feature (default 10)
+*   优化通过自动补全特性显示的结果数量（默认为10）
     
 
 * * *
 
-Object display
+### 对象显示
 --------------
 
-The version 3.0 has improved how an [object is displayed](https://www.itophub.io/wiki/page?id=3_0_0:user:display_and_modification "3_0_0:user:display_and_modification"):
+3.0 版本提升了[对象显示](https://www.itophub.io/wiki/page?id=3_0_0:user:display_and_modification "3_0_0:user:display_and_modification")的形式：
 
 [![](https://www.itophub.io/wiki/media?w=500&tok=5fd63e&media=3_0_0:customization:class-icon-instance.png)](https://www.itophub.io/wiki/media?media=3_0_0:customization:class-icon-instance.png "3_0_0:customization:class-icon-instance.png") [![UserRequest transitions](https://www.itophub.io/wiki/media?w=500&tok=383a31&media=3_0_0:release:object-details-banner-scrolled.png "UserRequest transitions")](https://www.itophub.io/wiki/media?media=3_0_0:release:object-details-banner-scrolled.png "3_0_0:release:object-details-banner-scrolled.png")
 
-### Header & actions
+#### 标头和操作
 
-The header part has been totally reworked:
+标头部分已经完全重做：
 
-*   Highlighting important information, such as the object status
+*   突出显示重要信息，如对象状态
     
-*   Using a specific color for each class of object, to make it clearer where you are at any time.
+*   为每一类对象使用特定的颜色，以便在任何时候都更清楚地显示所处位置。
     
-*   Locking the top bar, so actions remain accessible even when you scroll down an object which does not fit all in the browser window
+*   锁定了顶部栏，所以即使当你向下滚动一个对象时，操作仍然可以访问，不适合所有的浏览器窗口
     
-*   Replacing textual menus by meaningful icons, to free space for important data
+*   用富有意义的图标替换文本菜单，为重要数据腾出空间
     
-*   Separating the transitions actions from the rest, so they are easier to retrieve
+*   将转换操作从其他操作中分离出来，因此它们更容易检索
     
-*   Displaying an object icon with can be specific to the displayed instance, for better identification
-    
+*   显示对象的图标可以特定于显示的实例，以便更好地区分
 
 * * *
 
-### Navigation
+#### 导航
 
 [![Horizontal & Scrollable in read mode](https://www.itophub.io/wiki/media?w=400&tok=f9468a&media=3_0_0:user:tabs-scrollable-not-loaded-tab.png "Horizontal & Scrollable in read mode")](https://www.itophub.io/wiki/media?media=3_0_0:user:tabs-scrollable-not-loaded-tab.png "3_0_0:user:tabs-scrollable-not-loaded-tab.png") [![Vertical tabs](https://www.itophub.io/wiki/media?w=450&tok=c650f0&media=3_0_0:user:tabs-vertical-classic-read.png "Vertical tabs")](https://www.itophub.io/wiki/media?media=3_0_0:user:tabs-vertical-classic-read.png "3_0_0:user:tabs-vertical-classic-read.png")
 
-New modes to display the contents of an object, defining how you can switch from one tab to another:
+显示对象内容的新模式，定义了如何从一个选项卡切换到另一个选项卡：
 
-_Classic_: this mode behave as before:
+_经典_： 这个模式和之前一样：
 
-*   only one tab at a time is displayed.
+*   只能同时显示一个选项卡。
     
-*   You click on a tab title to switch to that other tab.
+*   点击选项卡标题切换到另一个选项卡。
     
 
-_Scrollable_: this mode is new:
+_滚动_： 新的模式：
 
-*   all tabs are displayed in the same page
+*   所有的选项卡显示在同一个页面
     
-*   you can scroll through them with your mouse or click on the tab title
+*   通过使用鼠标或者点击选项卡标题滚动
     
-*   asynchronous tabs such as dashboard are not loaded, until you click to get them displayed.
+*   异步的诸如仪表盘选项卡不会加载，除非点击显示它们。
     
 
 * * *
 
-Activity Panel
+### 活动面板
 --------------
 
-### Caselog edition alone
+#### 工单日志独立编辑
 
 [![Icon to switch to log edition](https://www.itophub.io/wiki/media?w=400&tok=d66212&media=3_0_0:user:activity-panel-entry-form-icon.png "Icon to switch to log edition")](https://www.itophub.io/wiki/media?media=3_0_0:user:activity-panel-entry-form-icon.png "3_0_0:user:activity-panel-entry-form-icon.png") [![Editing a log](https://www.itophub.io/wiki/media?w=350&tok=0f5c79&media=3_0_0:user:activity-panel-save-transition.png "Editing a log")](https://www.itophub.io/wiki/media?media=3_0_0:user:activity-panel-save-transition.png "3_0_0:user:activity-panel-save-transition.png")
 
-A new panel has been added, to speed-up a pretty common situation in which the agent just need to provide a reply within a log entry and maybe apply a transition.
+添加了一个新的面板，以加速处理人只需要在日志记录中提供回复并可能应用变化的常见情况。
 
-*   For this, instead of modifying the Ticket, he can directly enter his reply and send it, while applying in a single click a transition if required.
-    
-*   This new option exists within the console only, for all objects having a caselog.
-    
-*   The caselogs ordering can now be controlled through the XML object presentation
-    
+*   为此，他不需要修改工单，而是可以直接输入答复并发送它，同时如果需要，只需单击一次就可以应用变化。
 
-_More details in the [User's Manual](https://www.itophub.io/wiki/page?id=3_0_0:user:display_and_modification#activity_panel "3_0_0:user:display_and_modification")_
+*   这个新选项只存在于控制台中，适用于所有具有工单日志的对象。
+    
+*   现在可以通过XML对象声明来控制工单日志的顺序。
+
+_详情见 [用户手册](https://www.itophub.io/wiki/page?id=3_0_0:user:display_and_modification#activity_panel "3_0_0:user:display_and_modification")_
 
 * * *
 
-### History filtering
+#### 历史过滤
 
 [![Activity history](https://www.itophub.io/wiki/media?w=300&tok=3dcd4f&media=3_0_0:user:activity-panel-history-format.png "Activity history")](https://www.itophub.io/wiki/media?media=3_0_0:user:activity-panel-history-format.png "3_0_0:user:activity-panel-history-format.png") [![Log history](https://www.itophub.io/wiki/media?w=300&tok=8392c1&media=3_0_0:user:activity-panel-caselogs.png "Log history")](https://www.itophub.io/wiki/media?media=3_0_0:user:activity-panel-caselogs.png "3_0_0:user:activity-panel-caselogs.png") [![Filter History](https://www.itophub.io/wiki/media?w=300&tok=20e144&media=3_0_0:user:activity-panel-mixed.png "Filter History")](https://www.itophub.io/wiki/media?media=3_0_0:user:activity-panel-mixed.png "3_0_0:user:activity-panel-mixed.png")
 
-In this part of the screen, that we have named the “activity panel”, you retrieve the logs and the history, all merged in a single timeline, which makes it more efficient to understand the full history.
+在命名为“活动面板”的这部分屏幕中，可以检索日志和历史，它们都合并在一个时间轴中，这能更有效地了解完整的历史。
 
-*   You can filter this panel, to view any of those type of entries
+*   可以过滤此面板，以查看任何类型的条目
     
-    *   **log** entries, which you can filter more, to view only the public or the private log
+    *   **日志** 条目，你可以过滤更多，只查看评论或私信。
         
-    *   **state changes** whenever the object has changed state
+    *   **状态变化** 无论何时的对象的状态改变
         
-    *   **edit** when the object was created or modified (includes notification sent as well)
+    *   **编辑** 当对象创建或修改时(包括发送的通知)
         
-*   Next to the entry, the user picture, if they have one, is displayed, otherwise it is their initials.
+*   在条目旁边，如果用户有头像，则显示用户头像，否则显示用户姓名的首字母。
     
 
-The history timestamps are **relative when recent** and **absolute above** a specified delay.
+历史时间戳是 **相对近的时间** 和 **绝对高于** 某指定的延迟。
 
-History display can be configured with new [Activity Panel parameters](https://www.itophub.io/wiki/page?id=3_0_0:admin:itop_configuration_file#a "3_0_0:admin:itop_configuration_file").
+历史显示能够配置，通过新的 [活动面板参数](https://www.itophub.io/wiki/page?id=3_0_0:admin:itop_configuration_file#a "3_0_0:admin:itop_configuration_file")。
 
 * * *
 
-### Mention user
+### 提及用户
 
 [![Mention someone in a log](https://www.itophub.io/wiki/media?w=350&tok=37d12e&media=3_0_0:user:mention-user-in-caselog.png "Mention someone in a log")](https://www.itophub.io/wiki/media?media=3_0_0:user:mention-user-in-caselog.png "3_0_0:user:mention-user-in-caselog.png") [![Result of a mention in log](https://www.itophub.io/wiki/media?w=350&tok=783385&media=3_0_0:user:mention-user-in-caselog-result.png "Result of a mention in log")](https://www.itophub.io/wiki/media?media=3_0_0:user:mention-user-in-caselog-result.png "3_0_0:user:mention-user-in-caselog-result.png")
 
-In the console an agent may want to quickly notify someone within a caselog to get their attention.
+在控制台中，处理人可能希望快速通知工单日志中的某个人，以引起他们的注意。
 
-*   That person may not be linked to the Ticket, but still we want to notify them.
+*   那个人可能与工单没有关联，但我们仍然想通知他们。
     
-*   Just type **@** and the beginning of the person name, you will be prompt with available persons.
+*   只需输入 **@** 和姓名的开头，就会提示可用人员。
     
-*   Then at submission of the caselog entry containing a `mention`, the person will receive an email notification.
+*   然后在提交包含 `提及` 的工单日志条目时，该人将收到一封电子邮件通知。
     
-*   Multiple persons can be mentioned in the same caselog.
+*   同一工单日志中可以提及多个人。
     
-
-*   The proposed persons to be mentioned on a Ticket are by default those belonging to
+*   建议在工单上提及的人默认是属于
     
-    *   the customer organization of the Ticket
+    *   这个工单的客户组织
         
-    *   or to same organization as the current user.
+    *   或者与当前用户相同的组织。
         
-*   That logic can be changed by modifying the [Notification](https://www.itophub.io/wiki/page?id=3_0_0:admin:notifications#on_mention "3_0_0:admin:notifications")
+*   这个逻辑可以通过修改 [通知](https://www.itophub.io/wiki/page?id=3_0_0:admin:notifications#on_mention "3_0_0:admin:notifications") 改变。
     
-
 * * *
 
-List
+### 列表
 ----
 
-Do you remember how painful it was to loose the column titles when scrolling within a list? This is over, now they remains visible while you scroll down.  
-At the same time the search criterion used to filter the list remains on the screen.  
-Note also the colored circles associated with status value.  
-[User Manual for managing list](https://www.itophub.io/wiki/page?id=3_0_0:user:lists "3_0_0:user:lists").
+还记得在列表中滚动时失去列标题是多么痛苦吗?这回结束了，当你向下滚动时，现在他们仍然是可见的。
+
+同时，用于筛选列表的搜索条件仍然显示在屏幕上。
+
+还可以注意到与状态值相关的彩色圆圈。
+
+[用户指南-管理列表](https://www.itophub.io/wiki/page?id=3_0_0:user:lists "3_0_0:user:lists").
 
 [![](https://www.itophub.io/wiki/media?w=500&tok=47260b&media=3_0_0:user:search-list-with-header.png)](https://www.itophub.io/wiki/media?media=3_0_0:user:search-list-with-header.png "3_0_0:user:search-list-with-header.png")[![](https://www.itophub.io/wiki/media?w=500&tok=7cd4fa&media=3_0_0:user:search-list-header-locked.png)](https://www.itophub.io/wiki/media?media=3_0_0:user:search-list-header-locked.png "3_0_0:user:search-list-header-locked.png")
 
 * * *
 
-Dashboard
+### 仪表盘
 ---------
 
-Dashboard look has been improved, with new icons and graphical chart
+已经改进了仪表盘的外观，有新的图标和图表
 
-*   Dashlet header statistics based on status is using the colors associated with each value, to make it easier to read
+*   基于状态的组件头部统计使用了与每个值相关的颜色，以使其更容易阅读
     
-*   Dashlet badge has been simplified to highlight better the count and class name and remove useless duplicated text in the links
-    
+*   仪表盘徽章已简化，以更好地突出显示计数和类名，并删除链接中无用的重复文本
 
 [![Dashlet Hearder Statistic](https://www.itophub.io/wiki/media?w=500&tok=ef6e1a&media=3_0_0:release:dashlet-header-stat2.png "Dashlet Hearder Statistic")](https://www.itophub.io/wiki/media?media=3_0_0:release:dashlet-header-stat2.png "3_0_0:release:dashlet-header-stat2.png")[![Dashlet Badge](https://www.itophub.io/wiki/media?w=500&tok=7f67bf&media=3_0_0:release:dashlet-badge2.png "Dashlet Badge")](https://www.itophub.io/wiki/media?media=3_0_0:release:dashlet-badge2.png "3_0_0:release:dashlet-badge2.png")
 
-*   Dashboard specific menus have been harmonized, so it's easier to understand that when looking at the standard version of a dashboard, the edition mode will apply to the custom version as soon as you have one.
+*   仪表盘特定的菜单已经得到了协调，因此在查看仪表盘的标准版本时，只要有了自定义版本，版本模式就会应用于自定义版本，这一点更容易理解。
     
-*   Check for details [here](https://www.itophub.io/wiki/page?id=3_0_0:user:dashboards "3_0_0:user:dashboards")
+*   查看详情见 [这里](https://www.itophub.io/wiki/page?id=3_0_0:user:dashboards "3_0_0:user:dashboards")
     
 
 * * *
 
-Bubble caselogs
+### 气泡的工单日志
 ---------------
 
-The display of caselogs in the User Portal is more trendy:
+在用户门户中显示工单日志更加时髦：
 
 [![Buble caselog in Portal](https://www.itophub.io/wiki/media?w=600&tok=56b906&media=3_0_0:user:portal-bubble-caselog.png "Buble caselog in Portal")](https://www.itophub.io/wiki/media?media=3_0_0:user:portal-bubble-caselog.png "3_0_0:user:portal-bubble-caselog.png") —-
 
-Menus
+### 菜单
 -----
 
 [![Search in Menus](https://www.itophub.io/wiki/media?w=200&tok=ead4c4&media=3_0_0:user:menubar-searchmenu.png "Search in Menus")](https://www.itophub.io/wiki/media?media=3_0_0:user:menubar-searchmenu.png "3_0_0:user:menubar-searchmenu.png")
 
-The [menus](https://www.itophub.io/wiki/page?id=3_0_0:user:main#the_menu_bar "3_0_0:user:main") have been enriched with icons and can be shrunk to display just the icons, thus gaining space for the valuable information
+[菜单](https://www.itophub.io/wiki/page?id=3_0_0:user:main#the_menu_bar "3_0_0:user:main") 有丰富的图标，可以缩小显示图标，从而为有价值的信息获得空间
 
-### Welcome
+#### 欢迎
 
-A quick way to go back to iTop homepage!
+快速回到iTop首页的方法！
 
-*   This top left icon ![Back to Homepage](https://www.itophub.io/wiki/media?w=40&tok=11b32f&media=3_0_0:user:welcome-icon.png "Back to Homepage") was never going where you wanted, I bet,
+*   上方左侧图标![Back to Homepage](https://www.itophub.io/wiki/media?w=40&tok=11b32f&media=3_0_0:user:welcome-icon.png "Back to Homepage") 过去绝不会带你到想去的地方，我打赌，
     
-*   Now it will bring you back to iTop homepage, by default it is the Welcome dashboard!
+*   现在它将带你返回到iTop首页，默认回到欢迎面板！
     
-*   This icon can be customized in XML as part of the `branding`
+*   这个图标能够在XML中自定义，作为 `品牌` 部分
     
 
 [![Count in query menus](https://www.itophub.io/wiki/media?w=250&tok=c0dad9&media=3_0_0:user:menubar-second-level.png "Count in query menus")](https://www.itophub.io/wiki/media?media=3_0_0:user:menubar-second-level.png "3_0_0:user:menubar-second-level.png")
 
-### Objects count
+#### 对象统计
 
-Number of objects in predefined queries
+预定义查询中的对象数
 
-*   Exact number of objects is displayed in the menu itself,
+*   精确的对象数量显示在菜单本身，
     
-*   `99+` indicates that they are more than 99.
-    
-
-### Search in menus
-
-*   Shortcut `Alt+M` on Chrome to search in menus without the mouse
-    
-*   Then enter some characters to filter the menus containing that string
-    
-*   A **white-space** character, displays **all** menus
+*   `99+` 代表多于99条。
     
 
-### Expand & Collapse
+#### 菜单查询
+
+*   在Chrome的快捷键 `Alt+M` ，能够不使用鼠标在菜单中进行搜索
+    
+*   然后输入一些字符过滤包含字符的菜单
+    
+*   **空格** 字符，显示 **所有** 菜单
+    
+
+#### 展开 & 折叠
 
 [![Collapsed menus and filtered organization](https://www.itophub.io/wiki/media?w=300&tok=922a53&media=3_0_0:user:menubar-filtered-on-organization.png "Collapsed menus and filtered organization")](https://www.itophub.io/wiki/media?media=3_0_0:user:menubar-filtered-on-organization.png "3_0_0:user:menubar-filtered-on-organization.png")
 
-*   Use the hamburger icon [![Expending menu icon](https://www.itophub.io/wiki/media?w=30&tok=cbb519&media=3_0_0:user:menubar-expand-icon.png "Expending menu icon")](https://www.itophub.io/wiki/media?media=3_0_0:user:menubar-expand-icon.png "3_0_0:user:menubar-expand-icon.png") to expand and collapse the first level of menus.
+*   使用汉堡包图标 [![Expending menu icon](https://www.itophub.io/wiki/media?w=30&tok=cbb519&media=3_0_0:user:menubar-expand-icon.png "Expending menu icon")](https://www.itophub.io/wiki/media?media=3_0_0:user:menubar-expand-icon.png "3_0_0:user:menubar-expand-icon.png") 展开和折叠菜单的第一层。
     
-*   When the menubar is expended, it displays a text along with the group icons.
+*   当菜单栏展开后，分组的图标旁边显示了文字。
     
-*   To collapse the menubar, press the [![> sign](https://www.itophub.io/wiki/media?w=30&tok=fd7c80&media=3_0_0:user:menubar-expanded-icon.png "> sign")](https://www.itophub.io/wiki/media?media=3_0_0:user:menubar-expanded-icon.png "3_0_0:user:menubar-expanded-icon.png") icon.
+*   想要折叠菜单栏，点击 [![> sign](https://www.itophub.io/wiki/media?w=30&tok=fd7c80&media=3_0_0:user:menubar-expanded-icon.png "> sign")](https://www.itophub.io/wiki/media?media=3_0_0:user:menubar-expanded-icon.png "3_0_0:user:menubar-expanded-icon.png") 图标。
     
-*   When the menubar is collapsed, a red circle is displayed [![Filtered menu collapse icon](https://www.itophub.io/wiki/media?w=30&tok=c4af09&media=3_0_0:user:menubar-filtered-on-organization-icon.png "Filtered menu collapse icon")](https://www.itophub.io/wiki/media?media=3_0_0:user:menubar-filtered-on-organization-icon.png "3_0_0:user:menubar-filtered-on-organization-icon.png") if you have filtered on an organization.
-    
+*   当菜单栏折叠时，如果过滤了某个组织，则会显示一个红色圆圈[![Filtered menu collapse icon](https://www.itophub.io/wiki/media?w=30&tok=c4af09&media=3_0_0:user:menubar-filtered-on-organization-icon.png "Filtered menu collapse icon")](https://www.itophub.io/wiki/media?media=3_0_0:user:menubar-filtered-on-organization-icon.png "3_0_0:user:menubar-filtered-on-organization-icon.png")。
 
 * * *
 
-Relations
+### 关系
 ---------
 
 [![](https://www.itophub.io/wiki/media?w=600&tok=42fb18&media=3_0_0:user:relation-display.png)](https://www.itophub.io/wiki/media?media=3_0_0:user:relation-display.png "3_0_0:user:relation-display.png") [![](https://www.itophub.io/wiki/media?w=600&tok=2393dd&media=3_0_0:user:relation-edition.png)](https://www.itophub.io/wiki/media?media=3_0_0:user:relation-edition.png "3_0_0:user:relation-edition.png")
 
-[Display of relationships](https://www.itophub.io/wiki/page?id=3_0_0:user:display_and_modification#managing_objects_relations "3_0_0:user:display_and_modification") in read and edit mode are now identical in terms of displayed fields.  
+ in read and edit mode are now identical in terms of displayed fields.  
 It's much faster now to replace a team member by another one, just by editing their name. This new logic is available on all many to many relationships.
+
+在读取和编辑模式下的[关系显示](https://www.itophub.io/wiki/page?id=3_0_0:user:display_and_modification#managing_objects_relations "3_0_0:user:display_and_modification")现在在显示字段方面是相同的。
+
+现在用另一个人替换一个团队成员要快得多，只需要编辑他们的名字。这种新的逻辑适用于所有多对多关系。
 
 * * *
 
