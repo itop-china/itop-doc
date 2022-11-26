@@ -4,7 +4,7 @@ linkTitle: "首选项设置"
 date: 2022-11-09
 weight: 3
 description: >
-  连接到iTop！
+    <br> ➡️ 介绍每个用户都可以配置的首选项，包括：用户界面、关注的组织列表、快捷方式、键盘快捷键、头像等。
 ---
 
 <img src="./images/user-preferences.png"  width="75%" height="75%"/>
