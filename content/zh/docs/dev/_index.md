@@ -74,8 +74,8 @@ docker exec itop-3.0.0 /install-xdebug.sh 9003 phpstorm
   - Validate验证配置
 
 
-
-参考资料：
+---
+**参考资料:**
 - 1、https://github.com/vbkunin/itop-docker
 - 2、http://wjhsh.net/yjken-p-6555438.html
 - 3、https://github.com/Combodo/itop-toolkit-community/releases
