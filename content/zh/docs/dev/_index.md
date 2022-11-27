@@ -38,7 +38,7 @@ docker exec itop-3.0.0 /install-toolkit.sh
 首先，调整源：
 ```
 # 进入容器
-docker exec itop-3.0.0 /bin/bash
+docker exec -it itop-3.0.0 /bin/bash
 # 执行以下命令
 echo '
 deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
@@ -77,5 +77,7 @@ docker exec itop-3.0.0 /install-xdebug.sh 9003 phpstorm
 
 参考资料：
 1、https://github.com/vbkunin/itop-docker
+
 2、http://wjhsh.net/yjken-p-6555438.html
+
 3、https://github.com/Combodo/itop-toolkit-community/releases
