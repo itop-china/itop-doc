@@ -20,80 +20,80 @@ description: >
 显示
 -------
 
-The details of an object are always displayed in the same manner in iTop, as shown below:
+在iTop中总是以相同的方式显示一个对象的详细信息，如下图：
 
 [![Details of a Contact](https://www.itophub.io/wiki/media?media=3_0_0:user:contact-details.png "Details of a Contact")](https://www.itophub.io/wiki/media?media=3_0_0:user:contact-details.png "3_0_0:user:contact-details.png")
 
-### Header
+### 标头
 
-The header part contains multiple critical information:
+标头部分包含了多个关键信息：
 
-*   The object **friendlyname**, which can be a single object field, like the name or a combination of object fields, like firstname + lastname of a Person.
+*   对象的 **友好名称（friendlyname）**，可以是单个对象字段，如名称(name)或者对象字段的组合，如 人员 的名字 + 姓氏。
     
-*   The object class
+*   对象所属类。
     
-*   The object **status** with a state specific color if any is defined for that class of object
+*   如果该对象所属类定义了伴随状态的特定颜色，那么对象 **状态（status）** 则会显示。
     
-*   Each class of objects has its own border **color**, to make it clearer where you are at any time.
-    
-*   An optional object **icon** with can be specific to the displayed instance, or common to all objects of the class
+*   每一类对象都有自己的边框 **颜色**，在任何时候都更清楚所在的位置。
+
+*   一个可选的对象**图标**，对应显示的实例，或者通用于类的所有对象。
     
 
-### Actions
+### 操作
 
 [![Other Actions](https://www.itophub.io/wiki/media?w=300&tok=fe356d&media=3_0_0:user:person-other-actions.png "Other Actions")](https://www.itophub.io/wiki/media?media=3_0_0:user:person-other-actions.png "3_0_0:user:person-other-actions.png")
 
-The actions allowed for this object are listed at the top-right. The most frequent actions are displayed as icons.
+对象允许的操作列在右上角。常用的操作显示为图标。
 
-*   [![Edit icon](https://www.itophub.io/wiki/media?media=3_0_0:user:modify-button.png "Edit icon")](https://www.itophub.io/wiki/media?media=3_0_0:user:modify-button.png "3_0_0:user:modify-button.png") allow to modify the current object. Not available if you are not allowed to edit the current object.
+*   [![Edit icon](https://www.itophub.io/wiki/media?media=3_0_0:user:modify-button.png "Edit icon")](https://www.itophub.io/wiki/media?media=3_0_0:user:modify-button.png "3_0_0:user:modify-button.png") 允许修改当前对象。如果不允许编辑当前对象，则不可用。
     
-*   [![Creation icon](https://www.itophub.io/wiki/media?media=3_0_0:user:plus-button.png "Creation icon")](https://www.itophub.io/wiki/media?media=3_0_0:user:plus-button.png "3_0_0:user:plus-button.png") allow to create an object of the same class as the current object. Not available if you are not allowed to create object of the current class.
+*   [![Creation icon](https://www.itophub.io/wiki/media?media=3_0_0:user:plus-button.png "Creation icon")](https://www.itophub.io/wiki/media?media=3_0_0:user:plus-button.png "3_0_0:user:plus-button.png") 允许创建与当前对象属于同一类的对象。如果不允许创建当前类的对象，则不可用。
     
-*   [![Refresh icon](https://www.itophub.io/wiki/media?media=3_0_0:user:refresh-button.png "Refresh icon")](https://www.itophub.io/wiki/media?media=3_0_0:user:refresh-button.png "3_0_0:user:refresh-button.png") allow to refresh the display of the current object, in case it was modified since you displayed it.
+*   [![Refresh icon](https://www.itophub.io/wiki/media?media=3_0_0:user:refresh-button.png "Refresh icon")](https://www.itophub.io/wiki/media?media=3_0_0:user:refresh-button.png "3_0_0:user:refresh-button.png") 允许刷新当前对象的显示，以防它在显示后被修改。
     
-*   [![Search icon](https://www.itophub.io/wiki/media?media=3_0_0:user:search-icon.png "Search icon")](https://www.itophub.io/wiki/media?media=3_0_0:user:search-icon.png "3_0_0:user:search-icon.png") allow to search for objects of the current class.
+*   [![Search icon](https://www.itophub.io/wiki/media?media=3_0_0:user:search-icon.png "Search icon")](https://www.itophub.io/wiki/media?media=3_0_0:user:search-icon.png "3_0_0:user:search-icon.png") 允许搜索当前类的对象。
     
-*   [![Other actions icon](https://www.itophub.io/wiki/media?media=3_0_0:user:more-button.png "Other actions icon")](https://www.itophub.io/wiki/media?media=3_0_0:user:more-button.png "3_0_0:user:more-button.png") allow to list the remaining actions which can be specific to the object:
+*   [![Other actions icon](https://www.itophub.io/wiki/media?media=3_0_0:user:more-button.png "Other actions icon")](https://www.itophub.io/wiki/media?media=3_0_0:user:more-button.png "3_0_0:user:more-button.png") 允许列出可以对应于对象的其他操作：
     
 
-_In this example, the `Create a user request…` action on the details of a Person, is brought by the extension [User action Configurator](https://www.itophub.io/wiki/page?id=extensions:itop-object-copier "extensions:itop-object-copier")_
+  _在这个示例中， 在人员的详情中`Create a user request…` 操作，是由扩展[User action Configurator](https://www.itophub.io/wiki/page?id=extensions:itop-object-copier "extensions:itop-object-copier")提供的功能。_
 
-*   The transitions actions are grouped under the transition icon
+*   转换（transitions）操作在转换图标下分组。
     
 
 [![UserRequest transitions](https://www.itophub.io/wiki/media?w=500&tok=383a31&media=3_0_0:release:object-details-banner-scrolled.png "UserRequest transitions")](https://www.itophub.io/wiki/media?media=3_0_0:release:object-details-banner-scrolled.png "3_0_0:release:object-details-banner-scrolled.png")
 
-When you scroll down, the banner is reduced but stay visible on top, so actions remain accessible all the time
+当向下滚动时，头部会缩小但在顶部仍然可见，因此始终可以访问这些操作。
 
-### Tabs
+### 选项卡
 
-*   The **Properties** tab displays the actual properties of the object.
+*   **属性** 选项卡显示对象的实际属性。
     
-*   Depending on the class of the object displayed (_Tickets_ for example), an extra **Notifications** tab may be available, showing all the notifications sent in response to events on this object.
+*   根据所显示对象的类别（例如 _工单_），可能会有一个额外的 **通知** 选项卡可用，显示响应此对象上的事件而发送的所有通知。
     
-*   The other tabs display the relationships between the selected object and other objects in the database.
+*   其他选项卡显示所选对象与数据库中其他对象之间的关系。
     
-*   For example, the tab **Teams** displays all the teams for which the selected person is a member of. The **Tickets** tab displays the tickets for which the selected person is the _requester_.
+*   例如， **团队** 选项卡 显示所选人员所属的所有团队。**工单** 选项卡显示所选人员作为_请求者_的工单。
     
-*   If there are not enough room to display all tabs, the rest is accessible under the [![Other tabs icon](https://www.itophub.io/wiki/media?media=3_0_0:user:more-button.png "Other tabs icon")](https://www.itophub.io/wiki/media?media=3_0_0:user:more-button.png "3_0_0:user:more-button.png") located at the end of the tabs row.
+*   如果没有足够的空间来显示所有选项卡，则可以在位于选项卡行末尾的[![Other tabs icon](https://www.itophub.io/wiki/media?media=3_0_0:user:more-button.png "Other tabs icon")](https://www.itophub.io/wiki/media?media=3_0_0:user:more-button.png "3_0_0:user:more-button.png")  下方访问其余选项卡。
     
 
 [![](https://www.itophub.io/wiki/media?w=400&tok=f93ac0&media=3_0_0:user:tabs-vertical-classic-read.png)](https://www.itophub.io/wiki/media?media=3_0_0:user:tabs-vertical-classic-read.png "3_0_0:user:tabs-vertical-classic-read.png") [![Horizontal & Scrollable in read mode](https://www.itophub.io/wiki/media?w=400&tok=f9468a&media=3_0_0:user:tabs-scrollable-not-loaded-tab.png "Horizontal & Scrollable in read mode")](https://www.itophub.io/wiki/media?media=3_0_0:user:tabs-scrollable-not-loaded-tab.png "3_0_0:user:tabs-scrollable-not-loaded-tab.png")
 
-There are two ways to display the contents of an object, the choice being made in the user preference. This navigation setting applies on all objects of iTop, in read and edit modes.
+有两种显示对象内容的方式，用户可以根据偏好进行选择。此导航设置适用于处于读取和编辑模式下所有的iTop对象。
 
-_Classic_:
+_经典_:
 
-*   only one tab at a time is displayed.
+*   一次只显示一个选项卡。
     
-*   You click on a tab title to switch to that other tab.
+*  单击一个选项卡标题，可切换到另一个选项卡。
     
 
-_Scrollable_:
+_滚动_:
 
-*   all tabs are displayed in the same page
+*   所有选项卡都显示在同一页面中。
     
-*   you can scroll through them with your mouse or click on the tab title
+*  可以用鼠标滚动浏览，或单击选项卡标题。
     
 
 * * *
