@@ -55,147 +55,142 @@ description: >
 
 #### 组织和访问权限
 
-Apart from the customer/provider relations, another reason to create several Organizations in iTop is to restrict access to some areas of the managed data.
+除了客户/供应商关系之外，在iTop中创建多个组织的另一个原因是要限制对一些管理数据区域的访问。
 
-In iTop the rights to “read” (or display) objects from the database is defined on a per Organization basis. Each user is given (in the definition of her/his account) the rights to access a set of Organizations.
+在iTop中，从数据库中“读取”(或显示)对象的权限是基于每个组织定义的。每个用户(在她/他的帐户的定义中)赋予了一组组织的访问权限。
 
-Organizations can be structured as a hierarchy. When this is the case, the access rights are inherited from the “Parent” Organization to the “Child” Organizations. For example, if “Company A” has two child Organizations: “Company A1” and “Company A2”, then if a user has the rights to access the objects in “Company A”, she/he will also be allowed to access the objects in “Company A1” and “Company A2”. On the other hand, a user who is allowed to access only “Company A1” will be allowed to access neither the objects in “Company A” nor those in “Company A2”.
+组织可以构造成层次结构。在这种情况下，访问权限将从“父”组织继承到“子”组织。例如，如果“公司A”有两个子组织:“公司A1”和“公司A2”，那么如果用户有权访问“公司A”中的对象，那么她/他也将允许访问“公司A1”和“公司A2”中的对象。换而言之，只允许访问“公司A1”的用户将不能访问“公司a”和“公司A2”中的对象。
 
-The rights to “write” (i.e. create, modify or delete) objects are defined only by the profile(s) assigned to the user account. For example the profile “Support Agent” gives the rights to create or modify User Request tickets (but not to delete them).
+对象的“写”(即创建、修改或删除)权限仅由分配给用户帐户的角色定义。例如，概要文件“Support Agent”赋予创建或修改用户请求工单(但不删除它们)的权限。
 
-This means that a user has the same access rights over all Organizations that she/he is allowed to access.
+这代表着用户对允许她/他访问的所有组织具有相同的访问权限。
 
-For example, in the current version of iTop, a user cannot have the rights to access the data of the Organizations “Company A” and “Company B” and the rights to create Servers only in “Organisation B”. If she/he is given the rights to create Servers, this will apply to both “Company A” and “Company B”.
+例如，在当前版本的iTop中，用户不能访问组织“公司A”和“公司B”的数据，并且也不能在“组织B”中创建服务器。如果她/他授予了创建服务器的权利，这将同时适用于“公司A”和“公司B”。
 
 ### 创建地理位置
 
-The Locations are very useful for grouping object by geography. Even if the location attribute is not a mandatory field when you create a CI in the CMDB, it is strongly recommended to create Locations beforehand and then to track the locations of all CIs.
+根据地理位置进行对象分组是非常有用的。当在CMDB中创建CI时，即使地理位置属性不是一个强制字段，也强烈建议预先创建地理位置，然后跟踪所有CI的位置。
 
-Carefully plan the creation of the Locations. Locations are difficult to identify (there is no commonly accepted unique identifier for a Location), if your company does not have one already, you may want to put in place a _naming convention_ in order to avoid duplicate Locations in the CMDB.
+要认真地计划去创建地理位置。位置很难识别(没有普遍接受的位置唯一标识符)，如果您的公司还没有，您可能想要提出一个 _命名约定_ 避免CMDB中重复的位置。
 
 #### 共享地址位置
 
-In Enterprise environments, even though the split of roles and responsabilities are in favor of creating several sub Organizations, it is often needed to have “shared” locations among several Organizations to document “co-locations”. iTop does not provide - in its standard version - a way to actually “share” objects between Organizations. However, the Locations are “inherited” from parent Organizations to child Organizations in the same manner as the access rights. This means that a Person, a Server or a Network Device belonging to “Company A2” can be located on a Location owned by “Company A”.
+在企业环境中，即使角色和职责的分割有利于创建若干个子组织，但经常需要在几个组织之间拥有“共享”位置来记录“协作位置”。在iTop的标准版本中，它没有提供在组织之间实际“共享”对象的方法。但是，地理位置以与访问权相同的方式从父组织“继承”到子组织。这意味着属于“公司A2”的人员、服务器或网络设备可以位于属于“公司A”的位置。
 
 ### 创建人员
 
-The Persons are very important in iTop as they are used to define all the contacts and their responsibilities. A Person belongs to one and only one organization. A Person can be a member of one or more Team(s), and therefore should be created before trying to setup Teams.
+人员在iTop中非常重要，因为他们用来定义所有的联系人及其职责。一个人只属于一个组织。人员可以是一个或多个团队的成员，因此应该在尝试设置团队之前创建人员。
 
-Also, each user record is linked to a Person object. Therefore Persons must be created before loading user accounts into iTop. The user record defines the access rights (and identification method), whereas the Person object defines the information about the contact: name, location, email address, telephone…
+而且，每个用户记录都链接到一个人员对象。因此，必须在将用户帐户导入到iTop之前创建人员。用户记录定义了访问权限(和识别方法)，而人员对象定义了关于联系人的信息:姓名、位置、电子邮件地址、电话……
 
 ### 创建团队
 
-The teams are linked to several types of object, like contracts or tickets, in order to define responsibilities. Teams are also used as “workgroups” for assigning tickets. Teams used for assigning tickets must also have at least one member (the agent to assign the ticket to). The attribute “Role” on the link between a Team and a Person is not mandatory, so you can leave it empty, but it is useful to define the role of the Person in the Team (Team Leader, Manager…).
+为了定义职责，团队与几种类型的对象(如合同或工单)相关联。团队也被用作分配工单的“工作组”。用于分配工单的团队也必须至少有一个成员(分配工单的处理人)。在团队和人员之间的链接上的属性“角色”不是强制性的，因此可以将其保留为空，但是定义团队中人员的角色(团队领导、经理……)是有价值的。
 
 ### 设备和软件配置
 
-Once the structure of the Organizations, the Locations and the contacts (Teams and Persons) have been loaded, you can start to populate the CMDB.
+一旦导入了组织、位置和联系人(团队和人员)的结构，就可以开始填充CMDB了。
 
-Since the software instances depend on the software types defined in the software catalog and are documented as installed on a particular host, you should start by documenting:
+由于软件实例依赖于软件目录中定义的软件类型，并且在安装到特定主机时被记录，因此应该首先记录:
 
-*   The physical infrastructure: Servers, Network Devices, PCs, etc…
+*   物理基础设施:服务器、网络设备、PC等……
     
-*   The Software catalog, by creating the needed type of “Software” objects
+*   软件目录，通过创建需要的“软件”对象的类型
     
 
 ## 服务管理
 ------------------
 
-Before managing tickets in iTop, the _services catalog_, the _Delivery Models_ and the _contracts_ must be defined. [![Service Management on-boarding](https://www.itophub.io/wiki/media?w=500&tok=e54611&media=3_0_0:implementation:service_management.png "Service Management on-boarding")](https://www.itophub.io/wiki/media-detail?id=3_0_0:implementation:start&media=3_0_0:implementation:service_management.png "3_0_0:implementation:service_management.png")
+在iTop中管理工单之前，必须定义 **_服务目录_** 、 **_交付模式_** 和 **_合同_** 。
+[![Service Management on-boarding](https://www.itophub.io/wiki/media?w=500&tok=e54611&media=3_0_0:implementation:service_management.png "Service Management on-boarding")](https://www.itophub.io/wiki/media-detail?id=3_0_0:implementation:start&media=3_0_0:implementation:service_management.png "3_0_0:implementation:service_management.png")
 
 ### 服务目录
 
-The “Services Catalog” is the list of Services that are available from a given provider Organization. The Services Catalog is documented in iTop by creating Service objects, assigned to the given Organization (considered as the provider of the service). Services are organized in a two-level hierarchy, through the two classes of objects: **Service** and **Service Subcategory**. Create the top level Services before loading sub categories.
+“服务目录”是可以从给定供应商组织获得的服务的列表。在iTop中，通过创建服务对象来记录服务目录，并将其分配给给定的组织(视为服务的提供者)。服务通过两类对象在两级层次结构中组织:**服务**和**子服务**。在加载子服务之前创建顶级服务。
 
-The third level “Service Family” is used to group Services together and is **mandatory** for the Enhanced Portal.
+第三级的“服务族”用于将服务分组在一起，对于增强型门户来说是 **强制性的** 。
 
-Once the service catalog (Services and Service Subcategories) is defined, create the Customer Contracts that will link each “customer” Organization to its “providers” by creating one Customer Contract per couple of provider/customer and linking the appropriate Services to the contract.
+一旦定义了服务目录(服务和服务子类别)，就可以创建客户合同，通过为每一对供应商/客户创建一个客户合同，并将适当的服务链接到合同，从而将每个“客户”组织与其“供应商”链接起来。
 
 ### 交付模式
 
-The Delivery Model is the object that defines which Team works for which customer. You can use a Delivery Model object to group together all the “support teams” for a given set of Services, or the support Teams dedicated to a particular customer. Each customer Organization must be assigned one, and only one, Delivery Model.
+交付模型是定义哪个团队为哪个客户工作的对象。您可以使用交付模式对象将给定的一组服务的所有“支持团队”或专用于特定客户的支持团队组合在一起。必须为每个客户组织分配一个且只能有一个交付模式。
 
-In the standard iTop 2.0 data model, there is no link between Teams and Services. The only limitation when assigning a ticket to a Team is that the Team must be part of the Delivery Model assigned to the Organization which is the customer of the ticket.
+在标准的iTop 2.0数据模型中，团队和服务之间没有链接。将工单分配给团队时的唯一限制是，团队必须是工单的客户组织的所指定的交付模式的一部分。
 
-For example, if you have the following Teams:
+例如，如果拥有以下的团队：
 
-*   **Helpdesk team**: a Team that processes all helpdesk requests/calls.
+*   **服务台团队**：一个处理所有帮助台请求/电话的团队。
     
-*   **MS Office Support Team**: a Team that processes all support requests about MS Office.
+*   **MS办公支持团队**：负责处理所有有关MS Office的支持请求的团队。
     
-*   **Hardware Support Team**: a Team that handles hardware calls (Replacements, new hardware orders)
+*   **硬件支持团队**：处理硬件呼叫(更换，新硬件订单)的团队。
     
-*   **Network Support Team**: a Team that handles network related issues
+*   **网络支持团队**：处理网络相关问题的团队。
     
-*   **Customer B Helpdesk Team**: a helpdesk team dedicated to Customer B
+*   **客户B服务台团队**：专门为客户B服务的服务台团队。
     
-*   **Customer B Hardware Team**: a Team handling hardware calls for Customer B
+*   **客户B硬件团队**：专门为客户B服务的处理硬件呼叫(更换，新硬件订单)的团队。
     
 
-You can then build two different Delivery Models:
+然后，可以构建两个不同的交付模式:
 
-*   “Delivery Model 1” composed of:
+*   “交付模式1”的组成:
     
-    *   Helpdesk Team
+    *   服务台团队
         
-    *   MS Office Support Team
+    *   MS办公支持团队
         
-    *   Network Support Team
+    *   网络支持团队
         
-*   “Delivery Model 2” composed of:
+*   “交付模式2”的组成:
     
-    *   Customer B Helpdesk Team
+    *   客户B服务台团队
         
-    *   Customer B Hardware Team
+    *   客户B硬件团队
         
-    *   MS Office Team
-        
+    *   MS办公支持团队
 
-The “Delivery Model 1” will be used by the Organizations “Customer A”, “Customer A1”, “Customer A2” and “Customer C”; whereas “Delivery Model 2” will be used by “Customer B”.
+“交付模式1”将由组织的“客户A”、“客户A1”、“客户A2”和“客户C”使用;而“交付模式2”将由“客户B”使用。
 
-### 服务级别协议和服务级别目标
+### 服务等级协议和服务等级目标
 
-The definition of Service Level Agreements (SLAs) and Service Level Targets (SLTs) are not mandatory to manage tickets in iTop, but without them iTop can neither compute deadlines for processing a ticket, nor escalate the ticket automatically.
+在iTop中管理工单，服务等级协议(SLA)和服务等级目标(SLT)定义不是必须的，但是如果没有它们，iTop既不能计算处理工单的最后期限，也不能自动升级工单。
 
-In order to compute whether or not the expected Service Level Agreements are respected, iTop introduces two possible types of metrics called SLTs (Service Level Targets):
+为了计算是否遵守了预期的服务等级协议，iTop引入了两种可能的指标类型，称为SLT(服务等级目标)：
 
-*   **TTO (Time To Own)**: the time between the creation of a ticket and its assignment to an Agent.
+*   **TTO (响应时间)**：从创建工单到将工单分配给处理人之间的时间。
     
-*   **TTR (Time To Resolve)**: the time between the creation of a ticket and its resolution (i.e. measured when the ticket enters the state “resolved”)
+*   **TTR (解决时间)**：从创建工单到解决工单之间的时间(即当工单进入“已解决”状态时测量)    
+
+SLT 定义了相关的持续时间：
+
+*   **衡量标准**：要么是TTO，要么是TTR
     
-
-A SLT defines a duration associated with:
-
-*   A **metric**: either TTO or TTR
+*   **工单类型**：（事件或服务请求）
     
-*   A **type of ticket** (incident or user request)
+*   **优先级**：（因为优先级高的工单一般处理速度更快）
+
+SLA被简单地定义为一组命名的SLT（例如，用于区分“金牌”和“银牌”服务级别)。
+
+在iTop中SLA/SLT的定义有两个影响：
+
+*   通知可以定义为与某个度量相关联的“阈值”的任何百分比(例如，通过配置通知，当达到50%的待解决时间时向处理工单的处理人发送邮件，当达到75%时向团队负责人发送邮件)。
     
-*   A **priority** (since tickets with higher priority should generally be processed more quickly)
-    
+*   当达到一个指标的100%时，工单将自动设置为一个特殊的“升级”状态(在工单的生命周期中定义了两个特定的状态:升级TTO和升级TTR)。进入到这种状态还可以用来触发特定的通知。
 
-A SLA is simply defined as a named group of SLTs (for example to distinguish between “Gold” and “Silver” service levels).
+例如，可以定义以下的服务等级矩阵：
 
-The definition of SLAs/SLTs have two effects in iTop:
-
-*   Notifications can be defined for any percentage of the “threshold” associated with one of the metrics (for example one can configure notifications to send an email to the agent working on a ticket when 50% of the Time To Resolve is reached and to the team leader when reaching 75%).
-    
-*   When 100% of a metric is reached, the ticket is automatically set to a special “escalation” state (there are two specific states defined in the tickets’ life-cycle: Escalation TTO and Escalation TTR). Entering such a state can also be used to trigger specific notifications.
-    
-
-For example, one can define the following service level matrix:
-
-| Incidents – Priority High | Incidents – Priority Medium | Requests – Priority High | Requests – Priority Medium |
+| 事件 – 高优先级 | 事件 – 中优先级 | 服务请求 – 高优先级 | 服务请求 – 中优先级 |
 | --- | --- | --- | --- |
-| Time To Own: 5 min | Time To Own: 30 min | Time To Own: 30 min | Time To Own: 4 hours |
-| Time To Resolve: 1 hour | Time To Resolve: 4 hours | Time To Resolve: 4 hours | Time To Resolve: n/a |
+| 响应时间: 5 min  | 响应时间: 30 min  | 响应时间: 30 min  | 响应时间: 4 hours |
+| 解决时间: 1 hour | 解决时间: 4 hours | 解决时间: 4 hours | 解决时间: n/a     |
 
-This would lead to creating 4 SLTs, one for each row of the table. These 4 SLTs can be grouped under one SLA named “Gold Service Level”.
+这将导致创建4个SLT，对应表格中的每一行每。这4个SLT可以分组在一个名为“金牌服务等级”的SLA下。
 
-Finally SLAs can be associated to Customer Contracts in order to define the applicable metrics for the contract.
+最后，SLA可以与客户合同相关联，以便为合同定义适用的度量标准。
 
-Your iTop instance is now ready to run. You may have a look at the [Configuration of Notifications](https://www.itophub.io/wiki/page?id=3_0_0:admin:notifications "3_0_0:admin:notifications") to setup email notifications for the tickets.
-
-
+iTop实例现在已准备就绪。你可以查看 [通知配置](https://www.itophub.io/wiki/page?id=3_0_0:admin:notifications "3_0_0:admin:notifications") 设置工单邮件通知的方法。
 
 ---
 原文：<https://www.itophub.io/wiki/page?id=3_0_0:implementation:start> 
