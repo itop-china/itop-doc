@@ -17,8 +17,10 @@ description: >
 {{% /pageinfo %}}
 
 
-显示
+**_对象显示和修改_**
 -------
+
+## 显示
 
 在iTop中总是以相同的方式显示一个对象的详细信息，如下图：
 
@@ -98,233 +100,229 @@ _滚动_:
 
 * * *
 
-Modification of an object
+对象修改
 -------------------------
 
-To modify an object, click on the ![Edit icon](https://www.itophub.io/wiki/media?media=3_0_0:user:pen-icon.png "Edit icon") action, from the details of the object (The same action is also available on a list containing only one object).
+要修改对象，请从对象的详细信息中单击![Edit icon](https://www.itophub.io/wiki/media?media=3_0_0:user:pen-icon.png "Edit icon")图标操作(在只包含一个对象的列表中也可以使用相同的操作)。
 
-The form used to modify an object is quite similar to its details. The only difference is that the fields are editable. For example, the form to modify a _Person_ is displayed as shown below:
+用来修改对象的表单与对象的详情页非常相似。唯一的区别是这些字段是可编辑的。例如，修改 _人员_ 的表单如下所示:
 
 [![Form for modifying an Person](https://www.itophub.io/wiki/media?w=600&tok=496d7a&media=3_0_0:user:modify-contact.png "Form for modifying an Person")](https://www.itophub.io/wiki/media-detail?id=3_0_0:user:display_and_modification&media=3_0_0:user:modify-contact.png "3_0_0:user:modify-contact.png")
 
-For some of the fields, the value is not a free-text but instead must be picked from a drop-down list:
+对于某些字段，值不是自由文本，而是必须要从下拉列表中选择:
 
 [![Drop Down List](https://www.itophub.io/wiki/media?media=3_0_0:user:combo-field.png "Drop Down List")](https://www.itophub.io/wiki/media-detail?id=3_0_0:user:display_and_modification&media=3_0_0:user:combo-field.png "3_0_0:user:combo-field.png")
 
-The **treeview button** (![Tree Button](https://www.itophub.io/wiki/media?media=3_0_0:user:mini_tree.png "Tree Button")) is available for values that are organized as a hierarchy.
+**树形按钮** (![Tree Button](https://www.itophub.io/wiki/media?media=3_0_0:user:mini_tree.png "Tree Button")) 用来组织层次结构的值。
 
-The **plus button** ([![Plus](https://www.itophub.io/wiki/media?media=3_0_0:user:plus-button.png "Plus")](https://www.itophub.io/wiki/media-detail?id=3_0_0:user:display_and_modification&media=3_0_0:user:plus-button.png "3_0_0:user:plus-button.png")) is a shortcut to create an object and add it to the list. The button is only available for users who are allowed to create this type of object. For example, when creating or modifying a ticket, click on the ([![Plus](https://www.itophub.io/wiki/media?media=3_0_0:user:plus-button.png "Plus")](https://www.itophub.io/wiki/media-detail?id=3_0_0:user:display_and_modification&media=3_0_0:user:plus-button.png "3_0_0:user:plus-button.png")) button of the field **Caller**. The form is displayed to enable to create a new Person:
+**加号按钮** ([![Plus](https://www.itophub.io/wiki/media?media=3_0_0:user:plus-button.png "Plus")](https://www.itophub.io/wiki/media-detail?id=3_0_0:user:display_and_modification&media=3_0_0:user:plus-button.png "3_0_0:user:plus-button.png")) 是创建对象并将其添加到列表的快捷方式。 该按钮仅对允许创建此类型对象的用户可用。例如，在创建或修改工单时，单击 **发起人** 字段的加号按钮([![Plus](https://www.itophub.io/wiki/media?media=3_0_0:user:plus-button.png "Plus")](https://www.itophub.io/wiki/media-detail?id=3_0_0:user:display_and_modification&media=3_0_0:user:plus-button.png "3_0_0:user:plus-button.png")) 。此时，显示的表单允许去创建一个新的人员：
 
 [![New Person Popup Dialog](https://www.itophub.io/wiki/media?w=600&tok=f6c414&media=3_0_0:user:popup-new-contact.png "New Person Popup Dialog")](https://www.itophub.io/wiki/media-detail?id=3_0_0:user:display_and_modification&media=3_0_0:user:popup-new-contact.png "3_0_0:user:popup-new-contact.png")
 
-A red message appears when a mandatory field is left blank, or when a field does not follow the expected format for the field (for example for an email address). The modifications to the object can only be saved (using the **Apply** button) if all the fields are properly filled.
+当必填字段为空时，或者当字段不遵循字段的预期格式(例如电子邮件地址)时，将出现红色消息。只有在正确填充所有字段时，才能保存对象的修改(使用**应用**按钮)。
 
-When the number of possible values for a given field exceeds a configured value (50 by default), the drop-down list is replaced by an _autocomplete_ field, as shown below:
+当一个给定字段的可能值的数量超过了一个配置值(默认为50)，下拉列表将被一个 _自动填充_ 字段所取代，如下所示:
 
 [![Autocomplete input](https://www.itophub.io/wiki/media?media=3_0_0:user:autocomplete-field.png "Autocomplete input")](https://www.itophub.io/wiki/media-detail?id=3_0_0:user:display_and_modification&media=3_0_0:user:autocomplete-field.png "3_0_0:user:autocomplete-field.png")
 
-Type at least _three letters_ to trigger the search and pick from the list of objects matching the typed letters, or use the magnifying glass button ([![Magnifier Button](https://www.itophub.io/wiki/media?media=3_0_0:user:magnifier-button.png "Magnifier Button")](https://www.itophub.io/wiki/media-detail?id=3_0_0:user:display_and_modification&media=3_0_0:user:magnifier-button.png "3_0_0:user:magnifier-button.png")) to open a searchdialog:
+输入至少 _三个字母_ 以触发搜索，并从与输入字母匹配的对象列表中选择，或使用放大镜按钮 ([![Magnifier Button](https://www.itophub.io/wiki/media?media=3_0_0:user:magnifier-button.png "Magnifier Button")](https://www.itophub.io/wiki/media-detail?id=3_0_0:user:display_and_modification&media=3_0_0:user:magnifier-button.png "3_0_0:user:magnifier-button.png")) 打开一个查询对话框：
 
 [![Popup dialog to search for Persons](https://www.itophub.io/wiki/media?w=600&tok=2d9c88&media=3_0_0:user:popup-select-contact.png "Popup dialog to search for Persons")](https://www.itophub.io/wiki/media-detail?id=3_0_0:user:display_and_modification&media=3_0_0:user:popup-select-contact.png "3_0_0:user:popup-select-contact.png")
 
-The search dialog lists all the objects. To narrow the search you can use the form at the top _before selecting an object_ and click on **_Ok_** to return to the main form.
+查询对话框列出了所有的对象。可以在选择对象之前使用顶部的表单，缩小搜索范围，然后单击**_确定_**返回到主表单。
 
-When editing an HTML field, (_Caselog entry are HTML field_), an embedded editor is included, check [CKEditor site](https://ckeditor.com/docs/ckeditor4/latest/examples/classic.html "https://ckeditor.com/docs/ckeditor4/latest/examples/classic.html") for its possibilities.
+当编辑一个HTML字段时， (_工单日志记录是HTML字段_)，包含一个嵌入式编辑器，查看[CKEditor site](https://ckeditor.com/docs/ckeditor4/latest/examples/classic.html "https://ckeditor.com/docs/ckeditor4/latest/examples/classic.html") 获取更多的信息。
 
-For text and html fields, iTop provides a spelling checker by pressing CTRL + right-click
+对于文本和html字段，iTop提供了拼写检查，通过使用组合键 CTRL+鼠标右键。
 
-Activity Panel
+活动面板
 --------------
 
-### Caselog edition alone
+### 工单日志独立编辑
 
-A new panel has been added, to speed-up a pretty common situation in which the agent just need to provide a reply within a log entry and maybe apply a transition.
+添加了一个新的面板，方便处理人只需要在日志条目中提供回复并可能应用变化的这种非常常见的情况。
 
-*   For this, instead of modifying the Ticket, he can directly enter his reply and send it, while applying in a single click a transition if required.
-    
-*   This new option exists within the console only, for all objects having a caselog.
-    
-*   For objects having multiple caselogs a confirmation is requested if more than one has been modified.
+*   为此，无需修改工单，可以直接输入回复并发送，同时如果需要，只需单击一次即可申请变化。
+
+*   这个新选项只存在于控制台中，对于所有有工单日志的对象。
+
+*   对于有多个工单日志的对象，如果修改了多个工单日志，则要求确认。
     
 
 [![Icon to switch to log edition](https://www.itophub.io/wiki/media?w=400&tok=d66212&media=3_0_0:user:activity-panel-entry-form-icon.png "Icon to switch to log edition")](https://www.itophub.io/wiki/media?media=3_0_0:user:activity-panel-entry-form-icon.png "3_0_0:user:activity-panel-entry-form-icon.png")[![Editing a log](https://www.itophub.io/wiki/media?w=350&tok=0f5c79&media=3_0_0:user:activity-panel-save-transition.png "Editing a log")](https://www.itophub.io/wiki/media?media=3_0_0:user:activity-panel-save-transition.png "3_0_0:user:activity-panel-save-transition.png")[![Multi logs update confirmation](https://www.itophub.io/wiki/media?w=350&tok=c9345d&media=3_0_0:user:activity-panel-caselogs-multi-edition.png "Multi logs update confirmation")](https://www.itophub.io/wiki/media?media=3_0_0:user:activity-panel-caselogs-multi-edition.png "3_0_0:user:activity-panel-caselogs-multi-edition.png")
 
-### History filtering
+### 历史记录过滤
 
-In this part of the screen, that we have named the “activity panel”, you retrieve the logs and the history, all merged in a single timeline, which makes it more efficient to understand the full history.
+在屏幕的这一部分，我们将其命名为“活动面板”，您可以检索日志和历史，它们都合并在一个时间轴中，这能够更有效地理解完整的历史。
 
-*   You can filter this panel, to view:
+*   可以过滤这个面板，去查看：
     
-    *   **log** entries, which you can filter more, to view only the public or the private log
+    *   **日志** 记录，你能够更好地过滤，去仅仅查看评论或私信
         
-    *   **state changes** whenever the object has changed state
+    *   **状态变化** 无论何时对象的状态变化
         
-    *   **edit** when the object was created or modified (includes notification sent as well)
+    *   **编辑** 当对象已创建或修改过时（也包括发送的通知）
         
-*   Next to the entry, the user picture, if they have one, is displayed, otherwise it is their initials.
+*   在记录的旁边，显示用户照片(如果他们有照片的话)，否则显示的是他们的姓名首字母。
     
 
-The history timestamps are **relative when recent**, eg: `3 days ago` and **absolute** when older than a week, _unless configured differently on your iTop_.
+历史记录的时间戳是 **相对最近时间**, 例如：`3天前` ，当超过一周的时间则是**绝对时间**，_除非在你的 iTop 中是不同的配置_.
 
 [![](https://www.itophub.io/wiki/media?w=400&tok=ff094d&media=3_0_0:user:activity-panel-mixed.png)](https://www.itophub.io/wiki/media?media=3_0_0:user:activity-panel-mixed.png "3_0_0:user:activity-panel-mixed.png") [![](https://www.itophub.io/wiki/media?w=400&tok=4995e5&media=3_0_0:user:activity-panel-caselogs.png)](https://www.itophub.io/wiki/media?media=3_0_0:user:activity-panel-caselogs.png "3_0_0:user:activity-panel-caselogs.png")[![](https://www.itophub.io/wiki/media?w=400&tok=7a7e5a&media=3_0_0:user:activity-panel-history-format.png)](https://www.itophub.io/wiki/media?media=3_0_0:user:activity-panel-history-format.png "3_0_0:user:activity-panel-history-format.png")
 
-### Mention user
+### 提及用户
 
-In the console an agent may want to quickly notify someone within a caselog to get their attention.
+在控制台中，办理人可能希望快速通知工单日志中的某人以引起他们的注意。
 
-*   That person may not be linked to the Ticket, but still we want to notify them.
+*   这个人可能并没有关联到工单，但我们仍然希望通知到他们。
     
-*   Just type **@** and the beginning of the person name, you will be prompt with available persons.
+*   只需输入**@**和个人姓名的开头，就会提示可用的人员。
     
-*   Then at submission of the caselog entry containing a `mention`, the person will receive an email notification.
-    
-*   Multiple persons can be mentioned in the same caselog.
+*   然后在提交包含“提及”的工单日志记录时，该人将收电子邮件通知。
+
+*   同一个工单日志中可以提到多个人。
     
 
-*   The proposed persons to be mentioned on a Ticket are by default those belonging to
+*   工单所提及的建议人选默认属于：
     
-    *   the customer organization of the Ticket
+    *   工单所在组织的客户，
         
-    *   or to same organization as the current user.
+    *   或者与当前用户相同的组织。
         
-*   That logic can be changed by modifying the [Notification](https://www.itophub.io/wiki/page?id=3_0_0:admin:notifications#on_mention "3_0_0:admin:notifications")
+*   能够通过修改[通知](https://www.itophub.io/wiki/page?id=3_0_0:admin:notifications#on_mention "3_0_0:admin:notifications")改变逻辑。
     
 
 [![Result of a mention in log](https://www.itophub.io/wiki/media?w=350&tok=37d12e&media=3_0_0:user:mention-user-in-caselog.png "Result of a mention in log")](https://www.itophub.io/wiki/media?media=3_0_0:user:mention-user-in-caselog.png "3_0_0:user:mention-user-in-caselog.png")[![Mention someone in a log](https://www.itophub.io/wiki/media?w=350&tok=783385&media=3_0_0:user:mention-user-in-caselog-result.png "Mention someone in a log")](https://www.itophub.io/wiki/media?media=3_0_0:user:mention-user-in-caselog-result.png "3_0_0:user:mention-user-in-caselog-result.png")
 
-### Expand & collapse
+### 展开 & 折叠
 
-The activity panel can be collapsed or expanded ![Expand & collapse activity panel icons](https://www.itophub.io/wiki/media?media=3_0_0:user:activity-panel-expand-collapse-icons.png "Expand & collapse activity panel icons")  
-Depending if the agent work requires to read and edit the caselog(s) or to modify the Ticket it-self
+活动面板能够展开或者折叠![Expand & collapse activity panel icons](https://www.itophub.io/wiki/media?media=3_0_0:user:activity-panel-expand-collapse-icons.png "Expand & collapse activity panel icons")  取决于办理人工作时是否需要读取和编辑工单日志或者是否需要修改工单本身。
 
 [![](https://www.itophub.io/wiki/media?w=600&tok=4dc7a8&media=3_0_0:user:activity-panel-collapsed.png)](https://www.itophub.io/wiki/media?media=3_0_0:user:activity-panel-collapsed.png "3_0_0:user:activity-panel-collapsed.png") [![](https://www.itophub.io/wiki/media?w=600&tok=78d45e&media=3_0_0:user:activity-panel-expanded.png)](https://www.itophub.io/wiki/media?media=3_0_0:user:activity-panel-expanded.png "3_0_0:user:activity-panel-expanded.png")
 
-### Concurrent access
+### 并发访问
 
-This topic only applies, if you have activated the [concurrent\_lock\_enabled](https://www.itophub.io/wiki/page?id=3_0_0:admin:itop_configuration_file#c "3_0_0:admin:itop_configuration_file") parameter to prevent multiple users modifying at the same time, the same object.
+如果激活了 [concurrent\_lock\_enabled](https://www.itophub.io/wiki/page?id=3_0_0:admin:itop_configuration_file#c "3_0_0:admin:itop_configuration_file") 参数，阻止多个用户同时修改同一个对象，那么这个主题才适用。
 
-*   If a user enter some text or just try to edit a caselog in the activity panel of an object currently under edition, or simply under caselog edition by another user, then the first user receive a small message to let him know that he will only be able to submit his entries once the other user will have finished. Notice that the `Send` button is greyed for that first user.
+*   如果用户输入一些文本，或者只是尝试在当前版本下的对象的活动面板中编辑工单日志，或者只是由另一个用户在工单日志版本下编辑案例，那么这个用户将收到一条简短的消息，让他知道只有在其他用户完成后他才能提交他的记录。注意，对于这个用户，`发送`按钮是灰色的。
     
-*   iTop will check every [activity\_panel.lock\_watcher\_period](https://www.itophub.io/wiki/page?id=3_0_0:admin:itop_configuration_file#a-b "3_0_0:admin:itop_configuration_file") seconds, if the lock was released or not, and if it was, it will lock it again but for the first user this time and activate the `Send` button, without loosing the text already entered in the caselog(s)
+*   iTop将每隔[activity\_panel.lock\_watcher\_period](https://www.itophub.io/wiki/page?id=3_0_0:admin:itop_configuration_file#a-b "3_0_0:admin:itop_configuration_file")秒进行检查，是否锁定已释放，如果已释放，它将再次锁定，但这次是针对这个用户, 并且会激活`发送`按钮，而不会丢失已经在工单日志中输入的文本。
     
 
 [![Locked](https://www.itophub.io/wiki/media?w=340&tok=2e98fd&media=3_0_0:user:activity-panel-concurrent-lock.png "Locked")](https://www.itophub.io/wiki/media?media=3_0_0:user:activity-panel-concurrent-lock.png "3_0_0:user:activity-panel-concurrent-lock.png")[![Unlocked](https://www.itophub.io/wiki/media?w=340&tok=e86139&media=3_0_0:user:activity-panel-concurrent-unlock.png "Unlocked")](https://www.itophub.io/wiki/media?media=3_0_0:user:activity-panel-concurrent-unlock.png "3_0_0:user:activity-panel-concurrent-unlock.png")
 
 * * *
 
-Handling Tickets Attachments
-============================
+**_处理工单附件_**
+-------
 
-Attachments allow to upload a document (any file or image) into iTop and “attach” it to a given object in iTop. This is very similar to email attachments.
+附件模块允许将文档(任何文件或图像)上传到iTop，并将其“附加”到iTop中的给定对象。这与电子邮件附件非常相似。
 
-Attachments are related to the object they are attached to, and will be deleted when the object is deleted from iTop. If you want to upload files into iTop and have them “attached” to several objects in iTop, then consider creating “Document” objects. Refer to [File documents](https://www.itophub.io/wiki/page?id=3_0_0:datamodel:itop-config-mgmt#document_file "3_0_0:datamodel:itop-config-mgmt").
+附件与它们所附加的对象相关，当该对象从iTop中删除时，附件也将被删除。如果想将文件上传到iTop，并将它们“附加”到iTop中的对象上，那么可以考虑创建“文档”对象。参考 [文件文档](https://www.itophub.io/wiki/page?id=3_0_0:datamodel:itop-config-mgmt#document_file "3_0_0:datamodel:itop-config-mgmt").
 
-To manage the attachments to a Ticket, click on the **_Attachments_** tab while creating or modifying a Ticket:
+当创建或修改一个工单时，管理工单的附件，点击 **_附件_** 标签页：
 
 [![Ticket Attachments tab](https://www.itophub.io/wiki/media?w=600&tok=665466&media=3_0_0:user:tickets-attachments.png "Ticket Attachments tab")](https://www.itophub.io/wiki/media-detail?id=3_0_0:user:display_and_modification&media=3_0_0:user:tickets-attachments.png "3_0_0:user:tickets-attachments.png")
 
-To upload a new attachment, click on the **_Select a file_** button and select the desired file. Note that the maximum size for a single uploaded file is displayed next to the **Select a file** button. If a file is bigger than this value, it cannot be uploaded into iTop. This maximum size depends on several settings on the server and can be changed only by an administrator.
+要上传一个新的附件，单击**_选择文件_**按钮并选择所需的文件。注意，单个上传文件的最大大小显示在**选择文件**按钮旁边。如果文件大于该值，则无法上传至iTop。这个最大大小取决于服务器上的几个设置，只能由管理员更改。
 
-Once attachments have been uploaded they are listed in the tab, with one icon per file. The name of the attachment is an hyperlink to download it.
+附件一旦上传，它们就会列在选项卡中，每个文件都有一个图标。附件的名称是下载的超链接。
 
-Use the trash icon, at the end of the row to delete an attachment. It is not only removed from the current object (here a ticket) but fully deleted from iTop. [![Delete attachment](https://www.itophub.io/wiki/media?w=600&tok=23aff7&media=3_0_0:user:tickets-attachments-delete.png "Delete attachment")](https://www.itophub.io/wiki/media-detail?id=3_0_0:user:display_and_modification&media=3_0_0:user:tickets-attachments-delete.png "3_0_0:user:tickets-attachments-delete.png")
+使用在行末的回收站图标去删除一个附件。附件仅仅从当前对象（这里是一个工单）做了移除，但是从iTop中已完全删除。[![Delete attachment](https://www.itophub.io/wiki/media?w=600&tok=23aff7&media=3_0_0:user:tickets-attachments-delete.png "Delete attachment")](https://www.itophub.io/wiki/media-detail?id=3_0_0:user:display_and_modification&media=3_0_0:user:tickets-attachments-delete.png "3_0_0:user:tickets-attachments-delete.png")
 
-When the attachments is an image, then a preview will be shown anytime the mouse moves over the attachment icon.
+当附件为图像时，当鼠标移动到附件图标上时，就会预览显示。
 
 [![Attachment overview](https://www.itophub.io/wiki/media?w=600&tok=0423d6&media=3_0_0:user:tickets-attachments-overview.png "Attachment overview")](https://www.itophub.io/wiki/media-detail?id=3_0_0:user:display_and_modification&media=3_0_0:user:tickets-attachments-overview.png "3_0_0:user:tickets-attachments-overview.png")
 
-The changes to the Ticket (addition or removal of attachments) are actually performed when the **Apply** button is clicked. Clicking on **_Cancel_** for the Ticket form will cancel any change to the attachments.
+对工单的修改（增加或者移除附件）实际上是点击 **应用** 按钮时执行的。对于工单表单，点击 **_取消_** 则会取消对于附件的任何修改。
 
-Drag and drop
--------------
+## 拖拽
 
-Attachments can also be added by performing a drag drop of the files to attach, directly over the browser's window. When files are dragged over the “Attachments” tab, a blue shadow appears around the area where attached files are normally displayed:
+还可以通过直接在浏览器窗口上拖拽要附加的文件来添加附件。当文件被拖到“附件”选项卡上时，通常显示附件文件的区域周围会出现一个蓝色阴影:
 
-[![Dragging files over the "Attachments" tab](https://www.itophub.io/wiki/media?w=600&tok=751e8a&media=3_0_0:user:attachments-drag-and-drop2.png "Dragging files over the "Attachments" tab")](https://www.itophub.io/wiki/media?media=3_0_0:user:attachments-drag-and-drop2.png "3_0_0:user:attachments-drag-and-drop2.png")
+[![Dragging files over the Attachments tab](https://www.itophub.io/wiki/media?w=600&tok=751e8a&media=3_0_0:user:attachments-drag-and-drop2.png "Dragging files over the Attachments tab")](https://www.itophub.io/wiki/media?media=3_0_0:user:attachments-drag-and-drop2.png "3_0_0:user:attachments-drag-and-drop2.png")
 
-If the “Attachments” tab is not the active one when dragging, files can still be attached to the ticket and the tab itself shows the blue shadow during the drag operation:
+如果拖动时“附件”选项卡不是活动选项卡，则仍然可以将文件附加到工单上，并且在拖动操作时选项卡本身显示为蓝色阴影:
 
 [![Dragging files with the attachment tab hidden](https://www.itophub.io/wiki/media?w=600&tok=0615bf&media=3_0_0:user:attachments-drag-and-drop1.png "Dragging files with the attachment tab hidden")](https://www.itophub.io/wiki/media?media=3_0_0:user:attachments-drag-and-drop1.png "3_0_0:user:attachments-drag-and-drop1.png")
 
-Managing Objects Relations
-==========================
+**_管理对象关系_**
+-------
 
-In iTop most of the tabs displayed on the details of an object represent relations between objects. All these relations are managed in the same manner.  
+在iTop中，显示在对象详细信息上的大多数选项卡表示了与对象之间的关系。所有这些关系都以相同的方式进行管理。
 
-But there are two flavors of relationships, which are handled slightly differently in the background:
+但有两种类型的关系，它们在后台的处理方式略有不同:
 
-*   A multiple such as the “team-person” relationship: in which a Team usually contains multiple Persons and a Person can belong to **multiple** Teams
+*   多个，例如“团队-个人”关系：在这种关系中，一个团队通常包含多个人员，一个人员可以属于**多个**团队
+
+*   一个简单的关系，例如“经理-个人”关系：在这种关系中，经理可以管理多个人员，但一个人员永远不会超过**一个**经理
     
-*   A simple such as the “manager-person” relationship: in which the Manager can manage multiple Persons, but a Person has never more than **one** Manager
-    
 
-### Multiple relationship
+### 多个关系
 
-The form to modify the members of a “Team” looks like this:
+一个“团队”的成员的修改表单类似这样：
 
-#### Change
+#### 变更
 
 [![Managing team members](https://www.itophub.io/wiki/media?w=600&tok=7c2ecd&media=3_0_0:user:team-relations.png "Managing team members")](https://www.itophub.io/wiki/media?media=3_0_0:user:team-relations.png "3_0_0:user:team-relations.png")
 
-To change a team member by another one, just edit the name of the member to-remove and replace it by the name of the member to-add.
+要用另一个成员更改一个团队成员，只需编辑要删除的成员的名称，并将其替换为要添加的成员的名称。
 
-#### Add
+#### 增加
 
-In order to add members to the team:
+为了添加一个成员到团队：
 
-*   click on the “Add Persons…” button at the bottom. This displays - as a popup - the search form to select Persons.
+*   点击在底部的“添加 个人 对象…” 按钮。显示将弹出查询表单去选择人员。
     
-*   Check the desired persons in the list
+*   检查列表中期望的个人
     
-*   and click “Add” to go back to the main form.
+*   并且点击“添加”返回主表单。
     
 
 [![Adding Persons to a Team](https://www.itophub.io/wiki/media?w=600&tok=1e39d7&media=3_0_0:user:team-relation-add.png "Adding Persons to a Team")](https://www.itophub.io/wiki/media?media=3_0_0:user:team-relation-add.png "3_0_0:user:team-relation-add.png")
 
-#### Remove
+#### 移除
 
-To remove objects from the relation, check the corresponding line in the form, then click on the “Remove selected objects” button at the bottom.
+要从关系中删除对象，请选中表单中的相应行，然后单击底部的“移除对象”按钮。
 
 [![Remove Persons from Team](https://www.itophub.io/wiki/media?w=600&tok=44a953&media=3_0_0:user:team-relation-remove.png "Remove Persons from Team")](https://www.itophub.io/wiki/media?media=3_0_0:user:team-relation-remove.png "3_0_0:user:team-relation-remove.png")
 
-Note that removing objects from the relation does not actually delete these objects from iTop. Only the _relation_ between the objects is removed.
+注意，从关系中删除对象并不实际从iTop中删除这些对象。只删除对象之间的_关系_。
 
-Modification on relationships (added and removed) will not be saved if you cancel the current object edition.  
-But if you have created a new object using the + icon, that object is created regardless of what you do on the current object edition.
+如果取消当前对象的编辑，将不会保存对关系(添加和删除)的修改。
+但是如果您使用+图标创建了一个新对象，那么无论您在当前对象版本上做什么，该对象都会创建。
 
-### Simple relationship
+### 简单关系
 
-On Tickets also we have the equivalent of the Manager-Person relationship with a “parent-child” relation. A Ticket can have **zero or one** parent, while a parent can have from zero to many children.  
-Another flavor of simple relationship is the Interfaces sub-objects on a ConnectableCI, where each sub-object **must have one** parent and cannot exist without it.
+在工单上，我们也有类似于“父子”关系，如：经理-个人关系。一个工单可以有**0个或1个**父，而一个父对象可以有0到多个子对象。
+另一种简单关系是ConnectableCI上的Interfaces子对象，其中每个子对象**必须有一个**父对象，没有它就不能存在。
 
-*   Such sub-object can only be linked to a **single** parent object, so if there was one already it will be changed and not only added
+*   这样的子对象只能链接到**一个**父对象，所以如果已经有一个父对象，它将被更改，而不能只是添加。
     
-
 [![Adding n:1 relations on Tickets](https://www.itophub.io/wiki/media?w=600&tok=1ac48c&media=3_0_0:user:tickets-relations-n-1-add.png "Adding n:1 relations on Tickets")](https://www.itophub.io/wiki/media?media=3_0_0:user:tickets-relations-n-1-add.png "3_0_0:user:tickets-relations-n-1-add.png")
 
-*   Press the “Add xxxx” button which displays a pop-up window to search for the remote objects
+*   点击“添加 xxxx” 按钮，显示一个弹出的窗口去查询久远的对象
     
-*   Set optional filtering criterion
+*   设置可选的过滤条件
     
-*   Press the ![](https://www.itophub.io/wiki/media?media=3_0_0:user:search-refresh-btn.png) button to refresh the list.
+*   点击 ![](https://www.itophub.io/wiki/media?media=3_0_0:user:search-refresh-btn.png) 按钮刷新列表。
     
-*   Make your choice by checking the checkboxes at the beginning of the row you want to add,
+*   确保在希望添加的行的开头的选择框，进行了选择，
     
-*   Press the “Add” button to validate your choice(s) and dismiss the dialog.
+*   点击“添加”按钮验证你的选择，并且关闭对话框。
     
-*   The selected objects will be modified and will point to the current object and that situation will be visible in the corresponding tab.
+*   选择的对象将被修改，并且将指向当前的对象， 该情况将在相应的选项卡中可见。
     
 
 [![Managing n:1 relations on Tickets](https://www.itophub.io/wiki/media?w=600&tok=e14557&media=3_0_0:user:tickets-relations-n-1.png "Managing n:1 relations on Tickets")](https://www.itophub.io/wiki/media?media=3_0_0:user:tickets-relations-n-1.png "3_0_0:user:tickets-relations-n-1.png")
 
-To detach related tickets from the current ticket, just select them by checking the corresponding checkbox and click on “Remove”.
+要从当前工单中移除相关工单，只需选中相应的复选框，然后单击“移除”。
 
-Note that removing objects from the relation does not delete these objects from iTop. Only the _relation_ between the objects is reset. (On the related Ticket the field that was pointing to the current Ticket is reset)
+注意，从关系中删除对象并不会从iTop中删除这些对象。只重置对象之间的_关系_。(在相关的工单上指向当前工单的字段会重置)
 
-← [The main screen](https://www.itophub.io/wiki/page?id=3_0_0:user:main "3_0_0:user:main")  
+>> →下一篇：[对象显示和修改](../05-Actions/) 
 
-[User Manual](https://www.itophub.io/wiki/page?id=3_0_0:user:start "3_0_0:user:start")  
+---
+原文：<https://www.itophub.io/wiki/page?id=3_0_0:user:display_and_modification>
 
- [Actions](https://www.itophub.io/wiki/page?id=3_0_0:user:actions "3_0_0:user:actions") →
-
-3\_0\_0/user/display\_and\_modification.txt · Last modified: 2022/01/21 16:52 (external edit)
+版本：3_0_0/user/display_and_modification.txt · Last modified: 2022/01/21 16:52 (external edit)
