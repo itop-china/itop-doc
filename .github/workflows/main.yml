@@ -6,6 +6,9 @@ on:
       - opened
     branches:
       - master
+  push:
+    branches:
+      - premerge 
 
 jobs:
   build:
