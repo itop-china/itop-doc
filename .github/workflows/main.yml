@@ -2,6 +2,9 @@ name: Pre-Merge Pipeline
 
 on:
   pull_request:
+    types:
+      - opened
+      - synchronize
     branches:
       - test
 
@@ -17,4 +20,4 @@ jobs:
         run: ls -la
 
       - name: cat
-        run: cat READEME.md
+        run: cat README.md
