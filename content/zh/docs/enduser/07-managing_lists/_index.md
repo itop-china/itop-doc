@@ -184,6 +184,7 @@ PDF 输出以等宽列渲染（即，如果选择了 10 列，则每列将使用
 
 **刷新间隔** 的最小值为 5 秒。
 
+>> [搜索](../06-search/)  ← 上一篇 | 下一篇 → [快捷方式](../08-shortcuts/) 
 ---
 原文：<https://www.itophub.io/wiki/page?id=3_1_0:user:lists>
 

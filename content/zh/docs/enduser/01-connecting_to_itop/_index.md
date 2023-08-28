@@ -7,8 +7,9 @@ description: >
     <br> ➡️ 登录iTop
 ---
 
+{{% pageinfo %}}
 
-#### 登录界面
+### 登录界面
 
 iTop的首界面是登录界面-- “欢迎使用 iTop!” 。每个iTop用户必须通过认证后，才能访问应用程序。
 
@@ -18,7 +19,7 @@ iTop的首界面是登录界面-- “欢迎使用 iTop!” 。每个iTop用户�
 
 <img src="./images/connecting-login.png" width="25%" height="25%" />
 
-#### 首次连接到iTop
+### 首次连接到iTop
 
 首次连接到iTop，将显示下方的欢迎对话框：
 
@@ -26,6 +27,7 @@ iTop的首界面是登录界面-- “欢迎使用 iTop!” 。每个iTop用户�
 
 <br>跳过对话框并且下次连接到iTop时直接进入应用的主界面的话，勾选掉 **在启动时显示此消息** ，点击 **Ok** 按钮关闭对话框。
 
+{{% /pageinfo %}}
 
 >> →下一篇： [主界面](../02-itop_main_screen/) 
 

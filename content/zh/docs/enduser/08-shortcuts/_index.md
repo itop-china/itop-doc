@@ -58,6 +58,7 @@ description: >
 
 要重命名或删除快捷方式，请前往 [用户首选项](../03-managing_your_preferences/) 页面。
 
+>> [管理列表](../07-managing_lists/)  ← 上一篇 | 下一篇 → [编辑仪表盘](../09-editing_dashboards/) 
 ---
 原文：<https://www.itophub.io/wiki/page?id=3_1_0:user:shortcuts>
 

@@ -7,8 +7,7 @@ description: >
       <br> ➡️ 介绍了对象的搜索操作。
 ---
 
-**---搜索---**
--------
+{{% pageinfo %}}
 
 在iTop中，大多数对象的详细信息中都可以看到搜索图标 ([![Search icon](https://www.itophub.io/wiki/media?media=3_0_0:user:search-icon.png "Search icon")](https://www.itophub.io/wiki/media-detail?id=3_0_0:user:search&media=3_0_0:user:search-icon.png "3_0_0:user:search-icon.png")) ，单击此图标会切换到多条件搜索表单。
 搜索表单中的所有条件都会使用**AND 操作符**进行组合。这意味着在搜索工单时，如果指定**Claude Monet**为发起人以及一组状态，搜索结果将列出所有符合这些条件的工单。
@@ -22,6 +21,8 @@ description: >
 *   在左上角的下拉列表中选择了一个组织，该对象不属于该组织。
     
 *   对象是废弃的，`首选项`中没有选择`显示废弃的数据`
+
+{{% /pageinfo %}}
 
 ## 场景
 
@@ -192,6 +193,7 @@ iTop默认使用以下格式来表示 _日期_ 和 _时间_ ：
 
 全局搜索是 _不_ 区分大小写的。搜索 **Dali**, **dali** 或者 **DALI** 将给出相同的结果。
 
+>> [对象显示和修改](../05-actions/)  ← 上一篇 | 下一篇 → [管理列表](../07-managing_lists/) 
 ---
 原文：<https://www.itophub.io/wiki/page?id=3_0_0:user:search>
 

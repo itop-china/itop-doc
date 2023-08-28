@@ -271,6 +271,7 @@ SELECT UserRequest WHERE org\_id\=:this\->id
 
 [![](https://www.itophub.io/wiki/media?w=600&tok=08ee16&media=3_1_0:user:dashlet-header-good-order.png)](https://www.itophub.io/wiki/media?media=3_1_0:user:dashlet-header-good-order.png "3_1_0:user:dashlet-header-good-order.png")
 
+>> [快捷方式](../08-shortcuts/)  ← 上一篇 | 下一篇 → [批量修改](../10-bulk_modifications/) 
 ---
 原文：<https://www.itophub.io/wiki/page?id=3_1_0:user:dashboards>
 

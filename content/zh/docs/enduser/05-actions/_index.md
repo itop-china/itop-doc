@@ -7,8 +7,7 @@ description: >
     <br> ➡️ 介绍了对象的常用增删改查、状态变化等操作，以及打印等功能。
 ---
 
-**---操作---**
--------
+{{% pageinfo %}}
 
 在iTop种，操作用于修改对象。操作可以执行:
 
@@ -21,6 +20,8 @@ description: >
 在iTop中的标准操作是这样的:
 
 [![Other Actions](https://www.itophub.io/wiki/media?media=3_0_0:user:details-popup-menu.png "Other Actions")](https://www.itophub.io/wiki/media-detail?id=3_0_0:user:actions&media=3_0_0:user:details-popup-menu.png "3_0_0:user:details-popup-menu.png")
+
+{{% /pageinfo %}}
 
 ## 新建
 
@@ -182,7 +183,7 @@ _默认情况下，此操作一直显示为_
 
 [![Person Specific Actions](https://www.itophub.io/wiki/media?w=400&tok=b0814b&media=3_0_0:user:person-other-actions.png "Person Specific Actions")](https://www.itophub.io/wiki/media?media=3_0_0:user:person-other-actions.png "3_0_0:user:person-other-actions.png")[![Ticket Specific Actions buttons](https://www.itophub.io/wiki/media?w=400&tok=8da916&media=3_0_0:user:ticket-other-actions.png "Ticket Specific Actions buttons")](https://www.itophub.io/wiki/media?media=3_0_0:user:ticket-other-actions.png "3_0_0:user:ticket-other-actions.png")
 
->> →下一篇：[对象显示和修改](../06-Search/) 
+>> [对象显示和修改](../04-display_and_modification_of_an_object/)  ← 上一篇 | 下一篇 → [搜索](../06-search/) 
 
 ---
 原文：<https://www.itophub.io/wiki/page?id=3_0_0:user:actions>

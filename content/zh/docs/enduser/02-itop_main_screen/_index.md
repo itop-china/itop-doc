@@ -7,9 +7,13 @@ description: >
     <br> ➡️ 介绍了iTop界面的所有标准元素，包括用户菜单及菜单栏的基本操作。
 ---
 
+{{% pageinfo %}}
+
 下图显示了应用程序的主界面，它包含了iTop界面的所有标准元素:
 
 <img src="./images/mainscreen.png"  width="75%" height="75%"/>
+
+{{% /pageinfo %}}
 
 ## **用户菜单**
 
@@ -36,7 +40,6 @@ description: >
 *   **帮助** 转向到iTop在线WIKI，仅在iTop Hub有效 (_假设用户可以访问互联网_)
     
 *   **关于iTop** 显示iTop的安装版本。
-    
 
 ### 标准门户
 ---------------
@@ -165,7 +168,7 @@ iTop中管理的许多对象都属于 _组织_ 。组织是iTop中编排对象�
 
 有时需要缩短下拉框中显示的组织列表。例如，可能需要只查看感兴趣的客户。请参考 [首选项设置](../03-managing_your_preferences/) 了解关于如何配置列表的更多信息。
 
->> →下一篇：[首选项设置](../03-managing_your_preferences/) 
+>> [连接到iTop](../01-connecting_to_itop/)  ← 上一篇 | 下一篇 → [首选项设置](../03-managing_your_preferences/)
 
 ---
 原文：<https://www.itophub.io/wiki/page?id=3_0_0:user:main>
