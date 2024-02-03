@@ -17,7 +17,7 @@ description: >
 
 为了更容易导航，文档分为不同的图书部分：
 
-*   [《最终用户手册》](https://www.itophub.io/wiki/page?id=3_0_0:user:start "3_0_0:user:start") 解释了使用应用程序需要的所有内容，与已经安装的数据模型无关。
+*   [《最终用户手册》](../enduser/ "3_0_0:user:start") 解释了使用应用程序需要的所有内容，与已经安装的数据模型无关。
 
 *   [《门户手册》](https://www.itophub.io/wiki/page?id=3_0_0:portal:portal_v2 "3_0_0:portal:portal_v2") 通过“门户”用户界面，提供给访问iTop的客户使用。
     
