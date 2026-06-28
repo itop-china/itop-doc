@@ -51,6 +51,10 @@ resampleFilter = "CatmullRom"
 quality = 75
 anchor = "smart"
 
+# Allow HTML content files (the site uses Docsy shortcodes in .html pages).
+[security]
+allowContent = ['.*']
+
 [services]
 [services.googleAnalytics]
 # Comment out the next line to disable GA tracking. Also disables the feature described in [params.ui.feedback].
@@ -77,6 +81,9 @@ time_format_blog = "02.01.2006"
     style = "tango"
     # Uncomment if you want your chosen highlight style used for code blocks without a specified language
     # guessSyntax = "true"
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 2
 
 # Everything below this are Site Params
 
@@ -103,7 +110,7 @@ archived_version = false
 # The version number for the version of the docs represented in this doc set.
 # Used in the "version-banner" partial to display a version number for the 
 # current doc set.
-version = "0.0"
+version = "3.2.0"
 
 # A link to latest version of the docs. Used in the "version-banner" partial to
 # point people to the main doc site.
@@ -147,6 +154,8 @@ navbar_translucent_over_cover_disable = false
 sidebar_menu_compact = true
 # Set to true to hide the sidebar search box (the top nav search box will still be displayed if search is enabled)
 sidebar_search_disable = false
+# Set to true to disable the automatic child-page cards at the bottom of list pages.
+disable_section_index = true
 
 # Adds a H2 section titled "Feedback" to the bottom of each doc. The responses are sent to Google Analytics as events.
 # This feature depends on [services.googleAnalytics] and will be disabled if "services.googleAnalytics.id" is not set.

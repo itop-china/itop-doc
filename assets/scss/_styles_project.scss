@@ -1,0 +1,129 @@
+.plugin-note {
+  margin: 1em;
+  width: 90%;
+  min-height: 40px;
+  text-align: justify;
+  vertical-align: middle;
+  padding: 15px 20px 15px 80px;
+  background-position: 20px 50%;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+
+.note-classic {
+  background-color: #eef;
+  background-image: url('/images/note.png');
+}
+
+.note-important {
+  background-color: #ffc;
+  background-image: url('/images/important.png');
+}
+
+.note-warning {
+  background-color: #fdd;
+  background-image: url('/images/warning.png');
+}
+
+.note-tip {
+  background-color: #dfd;
+  background-image: url('/images/tip.png');
+}
+
+// ============================================
+// iTop Wiki 文档内容排版规范（作用域：.td-content）
+// ============================================
+.td-content {
+  font-family: $itop-doc-font-family;
+  font-size: $itop-doc-font-size;
+  line-height: $itop-doc-line-height;
+
+  p, li, td {
+    font-weight: 400;
+  }
+
+  > h1 {
+    font-size: $itop-doc-h1-size;
+    font-weight: 700;
+  }
+
+  > h2 {
+    font-size: $itop-doc-h2-size;
+    font-weight: 700;
+  }
+
+  > h3 {
+    font-size: $itop-doc-h3-size;
+    font-weight: 700;
+  }
+
+  > h4 {
+    font-size: $itop-doc-h4-size;
+    font-weight: 700;
+  }
+
+  > h5 {
+    font-size: $itop-doc-h5-size;
+    font-weight: 700;
+  }
+
+  > h6 {
+    font-size: $itop-doc-h6-size;
+    font-weight: 700;
+  }
+
+  strong {
+    font-weight: 700;
+  }
+
+  // 页面顶部 description / lead 区域
+  .lead {
+    font-size: 0.9rem;      // 比正文略小
+    font-style: italic;     // 斜体，与正文形成区分
+    color: #777;            // 浅灰色，不过于明显
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+  }
+
+  // 行内代码字号与正文保持一致
+  p code, li > code, table code {
+    font-size: $itop-doc-font-size;
+  }
+
+  // 文档内图片居中显示
+  img {
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+  // 保证提示框内部字号/行高与正文一致
+  .plugin-note {
+    font-size: $itop-doc-font-size;
+    line-height: $itop-doc-line-height;
+  }
+}
+
+// ============================================
+// 右侧目录（TOC）样式
+// ============================================
+.td-toc {
+  .td-toc-title {
+    font-weight: 700;
+    font-size: $itop-doc-font-size;
+    color: $gray-900;
+    margin-bottom: 0.5rem;
+    padding-left: 0.25rem;
+  }
+
+  #TableOfContents {
+    > ul > li > a {
+      font-weight: 600;
+    }
+
+    > ul > li > ul > li > a {
+      font-weight: 400;
+    }
+  }
+}
