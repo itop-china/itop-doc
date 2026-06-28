@@ -1,2 +1,6 @@
 node_modules
 /resources/_gen
+public
+official_cache
+official_cache_json
+*.py
