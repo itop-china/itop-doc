@@ -1,0 +1,30 @@
+# Git
+.gitignore
+
+# Node / build artifacts
+node_modules
+/resources/_gen
+public
+.hugo_build.lock
+
+# Local caches
+official_cache
+official_cache_json
+official_cache_json2
+
+# IDE / editor settings
+.idea
+.vscode
+*.swp
+*.swo
+
+# Misc
+Dockerfile
+docker-compose.yaml
+.github
+netlify.toml
+todo.md
+fix_internal_links.py
+CONTRIBUTING.md
+LICENSE
+README.md
