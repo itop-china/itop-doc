@@ -1,13 +1,9 @@
 version: "3.3"
 
 services:
-
   site:
-    image: docsy/docsy-example
+    image: ghcr.io/itop-china/itop-doc:latest
     build:
       context: .
-    command: server
     ports:
-      - "1313:1313"
-    volumes:
-      - .:/src
+      - "8080:80"
