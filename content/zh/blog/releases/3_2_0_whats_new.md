@@ -1,10 +1,10 @@
 
 ---
-title: "iTop 3.2.0 新特性"
-linkTitle: "iTop 3.2.0 新特性"
+title: "iTop 3.2 新特性"
+linkTitle: "iTop 3.2 新特性"
 date: 2024-11-24
-description: >
-  
+lastmod: 2026-07-21
+description: "iTop 3.2 系列新特性概览，涵盖新闻中心、通知中心、HTML 编辑器、无障碍主题、门户搜索、管理员通知能力以及开发者 API。"
 ---
 
 
@@ -13,6 +13,12 @@ description: >
 *   3.2.0 Beta 版本发布日期：_2024年6月_
     
 *   3.2.0 发布日期： _2024年 9月_
+
+*   3.2.1 发布日期：_2025年3月_
+
+*   3.2.2-1 发布日期：_2025年8月_
+
+*   3.2.3 发布日期：_2026年4月_
     
 *   [下载链接](https://sourceforge.net/projects/itop/files/itop/3.2.0/ "https://sourceforge.net/projects/itop/files/itop/3.2.0/")
 
@@ -23,6 +29,10 @@ description: >
 *   开发者迁移须知： [迁移扩展到3.2](https://www.itophub.io/wiki/page?id=3_2_0:release:developer "3_2_0:release:developer")
     
 *   [Combodo 3.2 适配的插件版本 ](https://www.itophub.io/wiki/page?id=3_2_0:release:extensions "3_1_0:release:extensions")
+
+{{% pageinfo %}}
+本文已根据 iTop 官方文档更新至 **3.2.3**。下文首先介绍 3.2.0 带来的主要能力，并标注后续 3.2.x 版本补充的开发特性。
+{{% /pageinfo %}}
 
 # iTop 社区版新特性
 
@@ -218,6 +228,26 @@ Combodo 和 iTop 扩展的编辑者现在可以决定向某些用户（通常是
 +   EVENT\_DB\_ABOUT\_TO\_DELETE: 删除已确认并将发生。对象及其关系仍可在数据库中用于 OQL 查询和 Get('att\_code')
     
 +   EVENT\_ENUM\_TRANSITIONS: 管理当前对象状态中允许的转换。唯一允许的操作是使用 $this→DenyTransition($sTransitionCode) 拒绝转换。
+
+### 新的 XML 配置（3.2.1 起）
+
+从 iTop 3.2.1 开始，`AttributeDate` 和 `AttributeDateTime` 可以使用 XML 中的 `<default_value>` 为表单预填日期，并在通过 PHP 直接创建对象时设置默认值。
+
+支持使用 OQL 日期表达式，例如：
+
+```xml
+<default_value>NOW()</default_value>
+```
+
+```xml
+<default_value>DATE_ADD(NOW(), INTERVAL 7 DAY)</default_value>
+```
+
+- `NOW()`：使用对象创建时的当前日期或时间。
+- `DATE_ADD(NOW(), INTERVAL 7 DAY)`：使用当前日期或时间加 7 天。
+- 也可以使用其他受 OQL 支持的日期计算表达式。
+
+这些配置可以提前部署到较旧版本的 iTop 中，但在升级到支持该能力的版本前不会生效。
     
 ### 新的API
 
@@ -244,7 +274,20 @@ class MyFilesToAddToBackupArchive implements \iBackupExtraFilesExtension
 }
 ```
 
----
-原文：<https://www.itophub.io/wiki/page?id=3_2_0:release:whats_new#new_apis>
+#### `\iWelcomePopupExtension`
 
-版本：3_2_0/release/whats_new.txt · Last modified: 2024/09/10 10:25 by 127.0.0.1
+该接口允许扩展或代码片段在后台用户登录时显示欢迎消息。只要用户尚未确认，消息就会在后续登录时继续显示。
+
+推荐继承已经提供默认实现的 `\AbstractWelcomePopupExtension`，并通过 `GetMessages()` 返回消息列表。配合 `MessageFactory` 可以创建多种布局：
+
+- 左侧标题和说明、右侧插图
+- 左侧插图、右侧标题和说明
+- 包含完整 HTML 的说明内容
+- 在说明中嵌入视频等富媒体内容
+
+每条消息都应使用稳定且唯一的 ID，以便 iTop 正确记录用户是否已经确认该消息。
+
+---
+原文：<https://www.itophub.io/wiki/page?id=3_2_0:release:whats_new>
+
+官方页面最后更新：2026/04/30

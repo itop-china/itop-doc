@@ -1,47 +1,61 @@
 ---
 title: 关于
 linkTitle: 关于
+description: 了解 iTop 中文文档项目、内容范围、在线体验和社区参与方式。
+body_class: itop-info-page
 menu:
   main:
     weight: 50
-
 ---
 
+<section class="itop-page-hero">
+  <div class="container">
+    <span class="itop-page-eyebrow">认识本站</span>
+    <h1>关于 iTop 中文文档</h1>
+    <p>面向中文用户的 iTop 学习、部署、运维与开发参考。</p>
+  </div>
+</section>
 
-{{< blocks/cover title="关于 iTop 中文文档" image_anchor="bottom" height="min" color="primary" >}}
-<p class="lead mt-4">面向中文用户的 iTop 学习、部署、运维与开发参考。</p>
+<section class="itop-page-content">
+  <div class="container">
+    <p class="itop-page-intro">本站致力于整理和翻译 iTop 相关资料，帮助中文用户更高效地了解 iTop、搭建 CMDB、管理服务台流程，并完成系统集成和扩展开发。</p>
 
-{{< /blocks/cover >}}
+    <div class="itop-card-grid">
+      <a class="itop-action-card" href="../docs/">
+        <span class="itop-action-card__icon"><i class="fas fa-book-open"></i></span>
+        <h2>系统化文档</h2>
+        <p>涵盖安装、配置、最终用户操作、系统管理、数据模型、集成和定制开发等主题。</p>
+        <span class="itop-action-card__link">开始阅读 <i class="fas fa-arrow-right"></i></span>
+      </a>
 
-{{% blocks/lead %}}
-本站致力于整理和翻译 iTop 相关资料，帮助中文用户更高效地了解 iTop、搭建 CMDB、管理服务台流程，并完成系统集成和扩展开发。
-{{% /blocks/lead %}}
+      <a class="itop-action-card" href="https://server.itop.work" target="_blank" rel="noopener">
+        <span class="itop-action-card__icon"><i class="fas fa-laptop"></i></span>
+        <h2>在线体验</h2>
+        <p>通过在线环境直观了解 iTop 的界面、操作方式和主要功能。</p>
+        <span class="itop-action-card__link">打开在线环境 <i class="fas fa-arrow-right"></i></span>
+      </a>
 
-{{< blocks/section color="light" >}}
-{{% blocks/feature icon="fas fa-book-open" title="系统化文档" url="../docs/" %}}
-涵盖安装、配置、最终用户操作、系统管理、数据模型、集成和定制开发等主题。
-{{% /blocks/feature %}}
+      <a class="itop-action-card" href="../community/">
+        <span class="itop-action-card__icon"><i class="fas fa-users"></i></span>
+        <h2>共同完善</h2>
+        <p>文档由社区持续维护，欢迎反馈问题、修正内容并分享实践经验。</p>
+        <span class="itop-action-card__link">参与交流 <i class="fas fa-arrow-right"></i></span>
+      </a>
+    </div>
 
-{{% blocks/feature icon="fas fa-laptop" title="在线体验" url="https://server.itop.work" %}}
-通过在线环境直观了解 iTop 的界面和主要功能。
-{{% /blocks/feature %}}
-
-{{% blocks/feature icon="fas fa-users" title="共同完善" url="../community/" %}}
-文档由社区持续维护，欢迎反馈问题、修正内容并分享实践经验。
-{{% /blocks/feature %}}
-{{< /blocks/section >}}
-
-<div class="container py-5">
-  <div class="row justify-content-center">
-    <div class="col-lg-9">
-      <h2>关于 iTop</h2>
-      <p>iTop（IT Operational Portal）是一款开源的 Web 应用，以 CMDB 为核心，并提供事件、用户请求、变更、问题和服务管理等能力。它参考 ITIL 最佳实践设计，同时允许组织根据自身流程灵活配置。</p>
-
-      <h2>内容说明</h2>
-      <p>本站内容以中文使用场景为导向。不同 iTop 版本的界面和功能可能存在差异，请留意具体页面标注的适用版本；需要核对最新产品信息时，请以 <a href="https://www.itophub.io/wiki/" target="_blank" rel="noopener">iTop 官方文档</a>为准。</p>
-
-      <h2>参与项目</h2>
-      <p>如果你发现内容错误、链接失效或翻译不准确，可以前往 <a href="https://github.com/itop-china/itop-doc" target="_blank" rel="noopener">GitHub 文档仓库</a>提交 Issue 或 Pull Request。每一次修正都会帮助后来者少走弯路。</p>
+    <div class="itop-about-grid">
+      <article>
+        <h2>关于 iTop</h2>
+        <p>iTop（IT Operational Portal）是一款开源的 Web 应用，以 CMDB 为核心，并提供事件、用户请求、变更、问题和服务管理等能力。它参考 ITIL 最佳实践设计，同时允许组织根据自身流程灵活配置。</p>
+      </article>
+      <article>
+        <h2>内容说明</h2>
+        <p>本站内容以中文使用场景为导向。不同版本的界面和功能可能存在差异，请留意页面标注的适用版本；最新产品信息请以 <a href="https://www.itophub.io/wiki/" target="_blank" rel="noopener">iTop 官方文档</a>为准。</p>
+      </article>
+      <article>
+        <h2>参与项目</h2>
+        <p>发现内容错误、链接失效或翻译不准确时，欢迎前往 <a href="https://github.com/itop-china/itop-doc" target="_blank" rel="noopener">GitHub 文档仓库</a>提交 Issue 或 Pull Request。</p>
+      </article>
     </div>
   </div>
-</div>
+</section>
