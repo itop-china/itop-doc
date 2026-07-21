@@ -8,31 +8,40 @@ menu:
 ---
 
 
-{{< blocks/cover title="About Goldydocs" image_anchor="bottom" height="min" >}}
-
-<p class="lead mt-5">A sample site using the Docsy Hugo theme.
-</p>
+{{< blocks/cover title="关于 iTop 中文文档" image_anchor="bottom" height="min" color="primary" >}}
+<p class="lead mt-4">面向中文用户的 iTop 学习、部署、运维与开发参考。</p>
 
 {{< /blocks/cover >}}
 
 {{% blocks/lead %}}
-Goldydocs is a sample site using the <a href="https://github.com/google/docsy">Docsy</a> Hugo theme that shows what it can do and provides you with a template site structure. It’s designed for you to clone and edit as much as you like. See the different sections of the documentation and site for more ideas.
+本站致力于整理和翻译 iTop 相关资料，帮助中文用户更高效地了解 iTop、搭建 CMDB、管理服务台流程，并完成系统集成和扩展开发。
 {{% /blocks/lead %}}
 
+{{< blocks/section color="light" >}}
+{{% blocks/feature icon="fas fa-book-open" title="系统化文档" url="../docs/" %}}
+涵盖安装、配置、最终用户操作、系统管理、数据模型、集成和定制开发等主题。
+{{% /blocks/feature %}}
 
-{{< blocks/section >}}
-<div class="col-12">
-<h1 class="text-center">This is another section</h1>
-</div>
+{{% blocks/feature icon="fas fa-laptop" title="在线体验" url="https://server.itop.work" %}}
+通过在线环境直观了解 iTop 的界面和主要功能。
+{{% /blocks/feature %}}
 
+{{% blocks/feature icon="fas fa-users" title="共同完善" url="../community/" %}}
+文档由社区持续维护，欢迎反馈问题、修正内容并分享实践经验。
+{{% /blocks/feature %}}
 {{< /blocks/section >}}
 
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-9">
+      <h2>关于 iTop</h2>
+      <p>iTop（IT Operational Portal）是一款开源的 Web 应用，以 CMDB 为核心，并提供事件、用户请求、变更、问题和服务管理等能力。它参考 ITIL 最佳实践设计，同时允许组织根据自身流程灵活配置。</p>
 
+      <h2>内容说明</h2>
+      <p>本站内容以中文使用场景为导向。不同 iTop 版本的界面和功能可能存在差异，请留意具体页面标注的适用版本；需要核对最新产品信息时，请以 <a href="https://www.itophub.io/wiki/" target="_blank" rel="noopener">iTop 官方文档</a>为准。</p>
 
-{{< blocks/section >}}
-
-<div class="col-12">
-<h1 class="text-center">This is another section</h1>
+      <h2>参与项目</h2>
+      <p>如果你发现内容错误、链接失效或翻译不准确，可以前往 <a href="https://github.com/itop-china/itop-doc" target="_blank" rel="noopener">GitHub 文档仓库</a>提交 Issue 或 Pull Request。每一次修正都会帮助后来者少走弯路。</p>
+    </div>
+  </div>
 </div>
-
-{{< /blocks/section >}}
