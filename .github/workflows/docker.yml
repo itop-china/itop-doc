@@ -93,10 +93,17 @@ jobs:
         shell: bash
         run: |
           install -m 700 -d ~/.ssh
-          printf '%s\n' "$DEPLOY_SSH_KEY" > ~/.ssh/deploy_key
+          printf '%s\n' "$DEPLOY_SSH_KEY" | tr -d '\r' > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
           printf '%s\n' "$DEPLOY_KNOWN_HOSTS" > ~/.ssh/known_hosts
           chmod 600 ~/.ssh/known_hosts
+
+          # Fail early when the secret is not a valid private key. Printing the
+          # public-key fingerprint is safe and makes it possible to verify that
+          # the same key is installed in the remote user's authorized_keys.
+          ssh-keygen -y -f ~/.ssh/deploy_key > ~/.ssh/deploy_key.pub
+          echo "Deployment key fingerprint:"
+          ssh-keygen -lf ~/.ssh/deploy_key.pub
 
       - name: Pull image and deploy
         shell: bash
@@ -109,6 +116,7 @@ jobs:
             -i ~/.ssh/deploy_key \
             -p "$DEPLOY_PORT" \
             -o BatchMode=yes \
+            -o IdentitiesOnly=yes \
             -o StrictHostKeyChecking=yes \
             "$DEPLOY_USER@$DEPLOY_HOST" \
             "$remote_command"
