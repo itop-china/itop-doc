@@ -109,7 +109,7 @@ jobs:
         shell: bash
         run: |
           printf -v remote_command \
-            'cd %q && docker compose pull site && docker compose up -d --no-deps site && curl --fail --silent --show-error --retry 10 --retry-delay 3 --retry-all-errors http://127.0.0.1:8080/ > /dev/null' \
+            'cd %q && docker compose pull app && docker compose up -d --no-deps app && curl --fail --silent --show-error --retry 10 --retry-delay 3 --retry-all-errors http://127.0.0.1/ > /dev/null' \
             "$DEPLOY_PATH"
 
           ssh \
