@@ -48,7 +48,7 @@
      Docsy v0.2.0 references the removed _internal/google_analytics_async.html template.
      This override uses the modern _internal/google_analytics.html template. */ -}}
 {{ if hugo.IsProduction -}}
-  {{ with .Site.GoogleAnalytics -}}
+  {{ with .Site.Config.Services.GoogleAnalytics.ID -}}
     {{ if or (hasPrefix . "G-") (hasPrefix . "UA-") -}}
       {{ template "_internal/google_analytics.html" $ -}}
     {{ end -}}

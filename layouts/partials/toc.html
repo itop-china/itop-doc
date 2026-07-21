@@ -1,22 +1,9 @@
 {{ if not .Params.notoc }}
 {{ with .TableOfContents }}
 {{ if ge (len .) 200 }}
-{{ $toc := . }}
-{{ $toc = replace $toc "<nav id=\"TableOfContents\">" "" }}
-{{ $toc = replace $toc "</nav>" "" }}
-{{ $toc = replace $toc "<ul>" "" }}
-{{ $toc = replace $toc "</ul>" "" }}
 <div class="td-toc">
   <p class="td-toc-title">目录</p>
-  <nav id="TableOfContents">
-    <ul>
-      <li><a href="#">{{ $.Page.Title }}</a>
-        <ul>
-          {{ $toc | safeHTML }}
-        </ul>
-      </li>
-    </ul>
-  </nav>
+  {{ . | safeHTML }}
 </div>
 {{ end }}
 {{ end }}

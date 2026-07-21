@@ -118,12 +118,307 @@
   }
 
   #TableOfContents {
+    > ul {
+      margin: 0;
+      padding-left: 0;
+      list-style: none;
+    }
+
+    > ul > li {
+      margin-bottom: 0.45rem;
+    }
+
     > ul > li > a {
       font-weight: 600;
     }
 
+    > ul > li > ul {
+      margin: 0.3rem 0 0.65rem 0.35rem;
+      padding-left: 0.75rem;
+      border-left: 2px solid rgba($primary, 0.2);
+      list-style: none;
+    }
+
+    > ul > li > ul > li {
+      margin: 0.2rem 0;
+    }
+
     > ul > li > ul > li > a {
+      color: $gray-600;
+      font-size: 0.85rem;
       font-weight: 400;
     }
+  }
+}
+
+// ============================================
+// “交流 / 关于”紧凑信息页
+// ============================================
+.itop-info-page {
+  .itop-page-hero {
+    margin-top: 0.75rem;
+    padding: 2.75rem 1.5rem 3rem;
+    color: $white;
+    text-align: center;
+    background: linear-gradient(135deg, darken($primary, 8%), $primary 55%, lighten($primary, 10%));
+
+    h1 {
+      margin: 0.35rem 0 0.75rem;
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      font-weight: 700;
+      line-height: 1.15;
+    }
+
+    p {
+      max-width: 44rem;
+      margin: 0 auto;
+      font-size: 1.125rem;
+      opacity: 0.92;
+    }
+  }
+
+  .itop-page-content {
+    padding: 2.75rem 1.5rem 3.5rem;
+    background: $white;
+  }
+
+  .itop-page-eyebrow {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .itop-page-intro {
+    max-width: 52rem;
+    margin: 0 auto 2.25rem;
+    color: $gray-700;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: center;
+  }
+
+  .itop-card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+
+  .itop-action-card {
+    display: flex;
+    min-height: 18rem;
+    padding: 1.75rem;
+    color: $gray-800;
+    text-decoration: none;
+    flex-direction: column;
+    border: 1px solid $gray-300;
+    border-radius: 0.75rem;
+    background: $white;
+    box-shadow: 0 0.35rem 1.25rem rgba($black, 0.06);
+    transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+
+    &:hover,
+    &:focus {
+      color: $gray-800;
+      text-decoration: none;
+      transform: translateY(-0.2rem);
+      border-color: rgba($primary, 0.55);
+      box-shadow: 0 0.75rem 1.75rem rgba($black, 0.1);
+    }
+
+    h2 {
+      margin: 0 0 0.75rem;
+      font-size: 1.35rem;
+      font-weight: 700;
+    }
+
+    p {
+      margin-bottom: 1.25rem;
+      color: $gray-600;
+      font-size: 1rem;
+      line-height: 1.65;
+    }
+  }
+
+  .itop-action-card__icon {
+    display: inline-flex;
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1.25rem;
+    color: $primary;
+    font-size: 1.35rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.75rem;
+    background: rgba($primary, 0.1);
+  }
+
+  .itop-action-card__link {
+    margin-top: auto;
+    color: $primary;
+    font-size: 0.95rem;
+    font-weight: 600;
+
+    i {
+      margin-left: 0.25rem;
+      font-size: 0.8em;
+    }
+  }
+
+  .itop-guidance,
+  .itop-about-grid {
+    margin-top: 2.5rem;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    background: $gray-100;
+  }
+
+  .itop-guidance {
+    display: grid;
+    grid-template-columns: minmax(14rem, 0.8fr) minmax(20rem, 1.2fr);
+    gap: 2rem;
+    align-items: center;
+
+    h2 {
+      margin: 0.3rem 0 0.5rem;
+      font-size: 1.65rem;
+    }
+
+    p,
+    ul {
+      margin-bottom: 0;
+    }
+
+    ul {
+      padding-left: 1.25rem;
+      line-height: 1.8;
+    }
+  }
+
+  .itop-about-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+
+    h2 {
+      margin: 0 0 0.75rem;
+      font-size: 1.35rem;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+
+    p {
+      margin-bottom: 0;
+      color: $gray-700;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .itop-card-grid,
+    .itop-about-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .itop-action-card {
+      min-height: 0;
+    }
+
+    .itop-guidance {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .itop-page-hero {
+      padding: 2.25rem 1rem;
+    }
+
+    .itop-page-content {
+      padding: 2rem 0.25rem 2.75rem;
+    }
+
+    .itop-page-intro {
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
+      text-align: left;
+    }
+
+    .itop-guidance,
+    .itop-about-grid {
+      margin-top: 1.5rem;
+      padding: 1.5rem;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .itop-page-hero {
+      margin-top: 4.75rem;
+    }
+  }
+}
+
+// 交流页与关于页的头图区保持相同尺寸、位置和排版。
+.itop-info-page .td-default main > .itop-page-hero:first-of-type {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 1.5rem 5vw 1.75rem;
+  color: $white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, darken($primary, 8%), $primary 55%, lighten($primary, 10%));
+
+  &::after {
+    position: absolute;
+    bottom: -1.25rem;
+    left: 50%;
+    width: 0;
+    height: 0;
+    content: "";
+    transform: translateX(-50%);
+    border-top: 1.25rem solid $primary;
+    border-right: 1.5rem solid transparent;
+    border-left: 1.5rem solid transparent;
+    z-index: 2;
+  }
+
+  > .container {
+    width: 100%;
+  }
+
+  h1 {
+    margin: 0 0 0.65rem;
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    font-weight: 700;
+    line-height: 1.15;
+  }
+
+  p {
+    max-width: 62rem;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .itop-info-page .td-default main > .itop-page-hero:first-of-type {
+    margin-top: 4.75rem;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .itop-info-page .td-default main > .itop-page-hero:first-of-type {
+    margin-top: 0.75rem;
+    padding: 1.35rem 1rem 1.6rem;
   }
 }
